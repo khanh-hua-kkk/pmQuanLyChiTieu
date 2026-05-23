@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "khanh",
+    "email": "khanh@gmail.com",
+    "password": "3baa216a81c36d8918b49af3005e18d0b330fb2a970a9745ddbdd5c303c675a4",
+    "currency": "VND",
+    "created_at": "2026-05-23 16:32:06"
+  },
+  {
+    "id": 2,
+    "name": "ninh",
+    "email": "ninh123@gmail.com",
+    "password": "3d8355dab4798b8080ef372f3c2a734d186a2f86ee916240d564077344ce17bd",
+    "currency": "VND",
+    "created_at": "2026-05-23 16:36:21"
+  },
+  {
+    "id": 3,
+    "name": "kkk",
+    "email": "kkk@gmail.com",
+    "password": "011f71dabc558fa8006490ffbf85f4e5463531f6596813c8a4029653a1c71125",
+    "currency": "VND",
+    "created_at": "2026-05-23 16:38:19"
+  },
+  {
+    "id": 4,
+    "name": "Test User",
+    "email": "test@example.com",
+    "password": "afb4f8d252ff4a1efcfd55b3ccd11043890061f2a486d77a4359cd83b0427db7",
+    "currency": "VND",
+    "created_at": "2026-05-23 16:39:59"
+  }
+]

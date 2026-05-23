@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "category_id": 1,
+    "limit_amount": 100000.0,
+    "month": "2026-05",
+    "created_at": "2026-05-23 15:53:41"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "category_id": 3,
+    "limit_amount": 200000.0,
+    "month": "2026-05",
+    "created_at": "2026-05-23 15:54:44"
+  },
+  {
+    "id": 3,
+    "user_id": 3,
+    "category_id": 17,
+    "limit_amount": 300000.0,
+    "month": "2026-05",
+    "created_at": "2026-05-23 16:44:36"
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "name": "Ăn uống",
+    "type": "expense"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "name": "Chi tiêu hàng ngày",
+    "type": "expense"
+  },
+  {
+    "id": 3,
+    "user_id": 1,
+    "name": "Quần áo",
+    "type": "expense"
+  },
+  {
+    "id": 4,
+    "user_id": 1,
+    "name": "Mỹ phẩm",
+    "type": "expense"
+  },
+  {
+    "id": 5,
+    "user_id": 1,
+    "name": "Phí giao lưu",
+    "type": "expense"
+  },
+  {
+    "id": 6,
+    "user_id": 1,
+    "name": "Y tế",
+    "type": "expense"
+  },
+  {
+    "id": 7,
+    "user_id": 1,
+    "name": "Giáo dục",
+    "type": "expense"
+  },
+  {
+    "id": 8,
+    "user_id": 1,
+    "name": "Tiền điện",
+    "type": "expense"
+  },
+  {
+    "id": 9,
+    "user_id": 1,
+    "name": "Đi lại",
+    "type": "expense"
+  },
+  {
+    "id": 10,
+    "user_id": 1,
+    "name": "Phí liên lạc",
+    "type": "expense"
+  },
+  {
+    "id": 11,
+    "user_id": 1,
+    "name": "Tiền nhà",
+    "type": "expense"
+  },
+  {
+    "id": 12,
+    "user_id": 1,
+    "name": "Tiền lương",
+    "type": "income"
+  },
+  {
+    "id": 13,
+    "user_id": 1,
+    "name": "Tiền phụ cấp",
+    "type": "income"
+  },
+  {
+    "id": 14,
+    "user_id": 1,
+    "name": "Tiền thưởng",
+    "type": "income"
+  },
+  {
+    "id": 15,
+    "user_id": 1,
+    "name": "Thu nhập phụ",
+    "type": "income"
+  },
+  {
+    "id": 16,
+    "user_id": 1,
+    "name": "Đầu tư",
+    "type": "income"
+  },
+  {
+    "id": 17,
+    "user_id": 3,
+    "name": "Ăn uống",
+    "type": "expense"
+  },
+  {
+    "id": 18,
+    "user_id": 3,
+    "name": "Chi tiêu hàng ngày",
+    "type": "expense"
+  },
+  {
+    "id": 19,
+    "user_id": 3,
+    "name": "Quần áo",
+    "type": "expense"
+  },
+  {
+    "id": 20,
+    "user_id": 3,
+    "name": "Mỹ phẩm",
+    "type": "expense"
+  },
+  {
+    "id": 21,
+    "user_id": 3,
+    "name": "Phí giao lưu",
+    "type": "expense"
+  },
+  {
+    "id": 22,
+    "user_id": 3,
+    "name": "Y tế",
+    "type": "expense"
+  },
+  {
+    "id": 23,
+    "user_id": 3,
+    "name": "Giáo dục",
+    "type": "expense"
+  },
+  {
+    "id": 24,
+    "user_id": 3,
+    "name": "Tiền điện",
+    "type": "expense"
+  },
+  {
+    "id": 25,
+    "user_id": 3,
+    "name": "Đi lại",
+    "type": "expense"
+  },
+  {
+    "id": 26,
+    "user_id": 3,
+    "name": "Phí liên lạc",
+    "type": "expense"
+  },
+  {
+    "id": 27,
+    "user_id": 3,
+    "name": "Tiền nhà",
+    "type": "expense"
+  },
+  {
+    "id": 28,
+    "user_id": 3,
+    "name": "Tiền lương",
+    "type": "income"
+  },
+  {
+    "id": 29,
+    "user_id": 3,
+    "name": "Tiền phụ cấp",
+    "type": "income"
+  },
+  {
+    "id": 30,
+    "user_id": 3,
+    "name": "Tiền thưởng",
+    "type": "income"
+  },
+  {
+    "id": 31,
+    "user_id": 3,
+    "name": "Thu nhập phụ",
+    "type": "income"
+  },
+  {
+    "id": 32,
+    "user_id": 3,
+    "name": "Đầu tư",
+    "type": "income"
+  },
+  {
+    "id": 33,
+    "user_id": 2,
+    "name": "Ăn uống",
+    "type": "expense"
+  },
+  {
+    "id": 34,
+    "user_id": 2,
+    "name": "Chi tiêu hàng ngày",
+    "type": "expense"
+  },
+  {
+    "id": 35,
+    "user_id": 2,
+    "name": "Quần áo",
+    "type": "expense"
+  },
+  {
+    "id": 36,
+    "user_id": 2,
+    "name": "Mỹ phẩm",
+    "type": "expense"
+  },
+  {
+    "id": 37,
+    "user_id": 2,
+    "name": "Phí giao lưu",
+    "type": "expense"
+  },
+  {
+    "id": 38,
+    "user_id": 2,
+    "name": "Y tế",
+    "type": "expense"
+  },
+  {
+    "id": 39,
+    "user_id": 2,
+    "name": "Giáo dục",
+    "type": "expense"
+  },
+  {
+    "id": 40,
+    "user_id": 2,
+    "name": "Tiền điện",
+    "type": "expense"
+  },
+  {
+    "id": 41,
+    "user_id": 2,
+    "name": "Đi lại",
+    "type": "expense"
+  },
+  {
+    "id": 42,
+    "user_id": 2,
+    "name": "Phí liên lạc",
+    "type": "expense"
+  },
+  {
+    "id": 43,
+    "user_id": 2,
+    "name": "Tiền nhà",
+    "type": "expense"
+  },
+  {
+    "id": 44,
+    "user_id": 2,
+    "name": "Tiền lương",
+    "type": "income"
+  },
+  {
+    "id": 45,
+    "user_id": 2,
+    "name": "Tiền phụ cấp",
+    "type": "income"
+  },
+  {
+    "id": 46,
+    "user_id": 2,
+    "name": "Tiền thưởng",
+    "type": "income"
+  },
+  {
+    "id": 47,
+    "user_id": 2,
+    "name": "Thu nhập phụ",
+    "type": "income"
+  },
+  {
+    "id": 48,
+    "user_id": 2,
+    "name": "Đầu tư",
+    "type": "income"
+  }
+]
