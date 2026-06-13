@@ -1161,5 +1161,173 @@
         "over_budget": false
       }
     ]
+  },
+  {
+    "id": 36,
+    "user_id": 6,
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-30",
+    "period_type": "month",
+    "total_income": 66088823.169999994,
+    "total_expense": 114439343.82,
+    "balance": -48350520.65,
+    "created_at": "2026-06-13 14:05:08",
+    "over_budget_categories": [],
+    "category_summaries": [
+      {
+        "category_name": "Ăn uống",
+        "spent": 15494269.999999998,
+        "budget_limit": 0.0,
+        "percentage": 13.54,
+        "over_budget": false
+      },
+      {
+        "category_name": "Chi tiêu hàng ngày",
+        "spent": 9706505.309999999,
+        "budget_limit": 0.0,
+        "percentage": 8.48,
+        "over_budget": false
+      },
+      {
+        "category_name": "Quần áo",
+        "spent": 3423971.84,
+        "budget_limit": 0.0,
+        "percentage": 2.99,
+        "over_budget": false
+      },
+      {
+        "category_name": "Mỹ phẩm",
+        "spent": 7643144.68,
+        "budget_limit": 0.0,
+        "percentage": 6.68,
+        "over_budget": false
+      },
+      {
+        "category_name": "Phí giao lưu",
+        "spent": 11129301.01,
+        "budget_limit": 0.0,
+        "percentage": 9.73,
+        "over_budget": false
+      },
+      {
+        "category_name": "Y tế",
+        "spent": 9312306.85,
+        "budget_limit": 0.0,
+        "percentage": 8.14,
+        "over_budget": false
+      },
+      {
+        "category_name": "Giáo dục",
+        "spent": 19408127.1,
+        "budget_limit": 0.0,
+        "percentage": 16.96,
+        "over_budget": false
+      },
+      {
+        "category_name": "Tiền điện",
+        "spent": 14548190.780000001,
+        "budget_limit": 0.0,
+        "percentage": 12.71,
+        "over_budget": false
+      },
+      {
+        "category_name": "Đi lại",
+        "spent": 7419723.140000001,
+        "budget_limit": 0.0,
+        "percentage": 6.48,
+        "over_budget": false
+      },
+      {
+        "category_name": "Phí liên lạc",
+        "spent": 16353803.110000003,
+        "budget_limit": 0.0,
+        "percentage": 14.29,
+        "over_budget": false
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "user_id": 6,
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-30",
+    "period_type": "month",
+    "total_income": 66088823.169999994,
+    "total_expense": 114439343.82,
+    "balance": -48350520.65,
+    "created_at": "2026-06-13 14:06:34",
+    "over_budget_categories": [],
+    "category_summaries": [
+      {
+        "category_name": "Ăn uống",
+        "spent": 15494269.999999998,
+        "budget_limit": 0.0,
+        "percentage": 13.54,
+        "over_budget": false
+      },
+      {
+        "category_name": "Chi tiêu hàng ngày",
+        "spent": 9706505.309999999,
+        "budget_limit": 0.0,
+        "percentage": 8.48,
+        "over_budget": false
+      },
+      {
+        "category_name": "Quần áo",
+        "spent": 3423971.84,
+        "budget_limit": 0.0,
+        "percentage": 2.99,
+        "over_budget": false
+      },
+      {
+        "category_name": "Mỹ phẩm",
+        "spent": 7643144.68,
+        "budget_limit": 0.0,
+        "percentage": 6.68,
+        "over_budget": false
+      },
+      {
+        "category_name": "Phí giao lưu",
+        "spent": 11129301.01,
+        "budget_limit": 0.0,
+        "percentage": 9.73,
+        "over_budget": false
+      },
+      {
+        "category_name": "Y tế",
+        "spent": 9312306.85,
+        "budget_limit": 0.0,
+        "percentage": 8.14,
+        "over_budget": false
+      },
+      {
+        "category_name": "Giáo dục",
+        "spent": 19408127.1,
+        "budget_limit": 0.0,
+        "percentage": 16.96,
+        "over_budget": false
+      },
+      {
+        "category_name": "Tiền điện",
+        "spent": 14548190.780000001,
+        "budget_limit": 0.0,
+        "percentage": 12.71,
+        "over_budget": false
+      },
+      {
+        "category_name": "Đi lại",
+        "spent": 7419723.140000001,
+        "budget_limit": 0.0,
+        "percentage": 6.48,
+        "over_budget": false
+      },
+      {
+        "category_name": "Phí liên lạc",
+        "spent": 16353803.110000003,
+        "budget_limit": 0.0,
+        "percentage": 14.29,
+        "over_budget": false
+      }
+    ]
   }
 ]
