@@ -77,7 +77,14 @@ class LoginFrame(ttk.Frame):
         win = tk.Toplevel(self)
         win.title("Đăng ký tài khoản")
         win.resizable(False, False)
-        RegisterFrame(win, on_success=lambda: win.destroy()).pack(
+
+        def _on_register_success():
+            # Reload user data after a new account is created,
+            # vì RegisterFrame sử dụng UserService riêng và ghi file.
+            self.user_service = UserService()
+            win.destroy()
+
+        RegisterFrame(win, on_success=_on_register_success).pack(
             fill="both", expand=True)
 
 

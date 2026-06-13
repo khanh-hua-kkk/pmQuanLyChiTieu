@@ -41,16 +41,14 @@ class User:
 
 class Category:
     # type: "income" | "expense" | "both"
-    def __init__(self, id, user_id, name, type="both"):
+    def __init__(self, id, name, type="both"):
         self.id = id
-        self.user_id = user_id
         self.name = name
         self.type = type
 
     def to_dict(self):
         return {
             "id": self.id,
-            "user_id": self.user_id,
             "name": self.name,
             "type": self.type,
         }
@@ -59,7 +57,6 @@ class Category:
     def from_dict(cls, data):
         return cls(
             id=data["id"],
-            user_id=data["user_id"],
             name=data["name"],
             type=data.get("type", "both"),
         )

@@ -40,27 +40,30 @@ class CategoryRepository(BaseRepository):
         "Đầu tư",
     ]
 
+    def get_all(self):
+        if self._data.head is None:
+            self._create_default_categories()
+        return self._data
+
     def get_by_user(self, user_id):
-        result = self._data.filter(lambda c: c.user_id == user_id)
-        if result.head is None:
-            self._create_default_categories(user_id)
-            result = self._data.filter(lambda c: c.user_id == user_id)
-        return result
+        """Legacy alias: categories are global, not per-user."""
+        return self.get_all()
+
+    def get_by_type(self, type):
+        if type == "both":
+            return self.get_all()
+        return self.get_all().filter(lambda c: c.type in (type, "both"))
 
     def get_by_user_and_type(self, user_id, type):
-        """type: 'income' | 'expense' | 'both'"""
-        return self.get_by_user(user_id).filter(
-            lambda c: c.type in (type, "both")
-        )
+        """Legacy alias: categories are global, not per-user."""
+        return self.get_by_type(type)
 
-    def _create_default_categories(self, user_id):
+    def _create_default_categories(self):
         categories = []
         for name in self.DEFAULT_EXPENSE_CATEGORIES:
-            categories.append(Category(id=0, user_id=user_id,
-                                       name=name, type="expense"))
+            categories.append(Category(id=0, name=name, type="expense"))
         for name in self.DEFAULT_INCOME_CATEGORIES:
-            categories.append(Category(id=0, user_id=user_id,
-                                       name=name, type="income"))
+            categories.append(Category(id=0, name=name, type="income"))
 
         for category in categories:
             category.id = self._next_id()

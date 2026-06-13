@@ -30,5 +30,21 @@
     "password": "afb4f8d252ff4a1efcfd55b3ccd11043890061f2a486d77a4359cd83b0427db7",
     "currency": "VND",
     "created_at": "2026-05-23 16:39:59"
+  },
+  {
+    "id": 5,
+    "name": "ninh",
+    "email": "ninh15@gmail.com",
+    "password": "51328a0a22089891da0ff97344a26538bd22821a29d51bdd49fd09d3b2d1a21c",
+    "currency": "VND",
+    "created_at": "2026-06-13 09:41:12"
+  },
+  {
+    "id": 6,
+    "name": "ninh",
+    "email": "ninh11@gmail.com",
+    "password": "51328a0a22089891da0ff97344a26538bd22821a29d51bdd49fd09d3b2d1a21c",
+    "currency": "VND",
+    "created_at": "2026-06-13 09:43:14"
   }
 ]
