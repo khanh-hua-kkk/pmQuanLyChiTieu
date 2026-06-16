@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 from ui.theme import COLORS, FONTS, PAD
-from services.user_service import UserService
+from services.user_service import UserService, _validate_email
 
 
 class LoginFrame(ttk.Frame):
@@ -67,6 +67,9 @@ class LoginFrame(ttk.Frame):
     def _login(self):
         email = self.email_var.get().strip()
         password = self.pw_var.get()
+        if not _validate_email(email):
+            messagebox.showerror("Email không hợp lệ", "Email không hợp lệ, vui lòng nhập lại.")
+            return
         try:
             user = self.user_service.login(email, password)
             self.on_login_success(user)
@@ -130,6 +133,9 @@ class RegisterFrame(ttk.Frame):
 
         if not name or not email or not pw:
             messagebox.showwarning("Thiếu thông tin", "Vui lòng điền đầy đủ.")
+            return
+        if not _validate_email(email):
+            messagebox.showerror("Email không hợp lệ", "Email không hợp lệ, vui lòng nhập lại.")
             return
         if pw != pw2:
             messagebox.showerror("Lỗi", "Mật khẩu xác nhận không khớp.")

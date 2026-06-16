@@ -3,9 +3,7 @@ from repositories.repositories import UserRepository
 
 
 def _hash_password(password):
-    """Hàm băm tự cài cho mật khẩu.
-    Đây là thuật toán đơn giản và xác định, không dùng hashlib.
-    """
+    """Hàm băm tự cài cho mật khẩu."""
     if password is None:
         return ""
 
@@ -27,12 +25,35 @@ def _hash_password(password):
     return "".join(result)
 
 
+def _validate_email(email):
+    """Kiểm tra email: phải chứa '@' và có tên miền cấp cao hợp lệ.
+
+    Danh sách TLD hợp lệ có thể mở rộng trong `ALLOWED_TLDS`.
+    """
+    if not email or "@" not in email:
+        return False
+
+    ALLOWED_TLDS = {"com", "vn", "gov", "org", "edu", "net", "io", "tech"}
+
+    try:
+        local_part, domain = email.rsplit("@", 1)
+    except ValueError:
+        return False
+    if not local_part or not domain or "." not in domain:
+        return False
+
+    tld = domain.rsplit('.', 1)[-1].lower()
+    return tld in ALLOWED_TLDS
+
+
 class UserService:
     def __init__(self):
         self.user_repo = UserRepository()
 
     def register(self, name, email, password, currency="VND"):
         email = email.strip().lower()
+        if not _validate_email(email):
+            raise ValueError("Email không hợp lệ. Phải chứa ký tự '@'.")
         password = password.strip()
         if self.user_repo.get_by_email(email):
             raise ValueError("Email đã được sử dụng.")
@@ -47,6 +68,8 @@ class UserService:
 
     def login(self, email, password):
         email = email.strip().lower()
+        if not _validate_email(email):
+            raise ValueError("Email không hợp lệ. Phải chứa ký tự '@'.")
         password = password.strip()
         user = self.user_repo.get_by_email(email)
         if user is None or user.password != _hash_password(password):
