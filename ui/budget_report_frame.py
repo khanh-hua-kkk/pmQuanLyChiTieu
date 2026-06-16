@@ -84,9 +84,50 @@ class BudgetFrame(ttk.Frame):
                   background=COLORS["bg"]).grid(
             row=3, column=0, sticky="w", pady=(0, 8))
 
-        self.budget_container = ttk.Frame(self)
-        self.budget_container.grid(row=4, column=0, sticky="ew")
+        self.budget_list_frame = ttk.Frame(self)
+        self.budget_list_frame.grid(row=4, column=0, sticky="nsew")
+        self.budget_list_frame.columnconfigure(0, weight=1)
+        self.budget_list_frame.rowconfigure(0, weight=1)
+
+        self.budget_canvas = tk.Canvas(
+            self.budget_list_frame,
+            bg=COLORS["bg"],
+            highlightthickness=0,
+            height=320
+        )
+        self.budget_canvas.grid(row=0, column=0, sticky="nsew")
+
+        scrollbar = ttk.Scrollbar(
+            self.budget_list_frame,
+            orient="vertical",
+            command=self.budget_canvas.yview
+        )
+        scrollbar.grid(row=0, column=1, sticky="ns")
+
+        self.budget_canvas.configure(yscrollcommand=scrollbar.set)
+
+        self.budget_container = ttk.Frame(self.budget_canvas)
         self.budget_container.columnconfigure(0, weight=1)
+
+        self._budget_window = self.budget_canvas.create_window(
+            (0, 0), window=self.budget_container, anchor="nw"
+        )
+
+        self.budget_container.bind(
+            "<Configure>",
+            lambda event: self.budget_canvas.configure(
+                scrollregion=self.budget_canvas.bbox("all")
+            )
+        )
+
+        self.budget_canvas.bind(
+            "<Configure>",
+            lambda event: self.budget_canvas.itemconfigure(
+                self._budget_window, width=event.width
+            )
+        )
+
+        self.budget_canvas.bind_all("<MouseWheel>", self._on_budget_mousewheel)
 
     def _set_budget(self):
         cat_name = self.cat_var.get()
@@ -107,6 +148,9 @@ class BudgetFrame(ttk.Frame):
             self.refresh()
         except ValueError as e:
             messagebox.showerror("Lỗi", str(e))
+
+    def _on_budget_mousewheel(self, event):
+        self.budget_canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
 
     def refresh(self):
         for w in self.budget_container.winfo_children():
