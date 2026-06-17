@@ -179,6 +179,29 @@ class TransactionListFrame(ttk.Frame):
         ttk.Entry(filter_bar, textvariable=self.end_var,
                   width=12).pack(side="left", padx=(0, 12))
 
+        ttk.Label(filter_bar, text="Loại:").pack(side="left", padx=(0, 4))
+        self.type_labels = {"Tất cả": "both", "Thu nhập": "income", "Chi tiêu": "expense"}
+        self.type_var = tk.StringVar(value="Tất cả")
+        self.type_combo = ttk.Combobox(filter_bar, textvariable=self.type_var,
+                                       values=list(self.type_labels.keys()),
+                                       state="readonly", width=10)
+        self.type_combo.pack(side="left", padx=(0, 12))
+
+        ttk.Label(filter_bar, text="Sắp xếp:").pack(side="left", padx=(0, 4))
+        self.sort_labels = {"Ngày": "date", "Số tiền": "amount"}
+        self.sort_var = tk.StringVar(value="Ngày")
+        self.sort_combo = ttk.Combobox(filter_bar, textvariable=self.sort_var,
+                                       values=list(self.sort_labels.keys()),
+                                       state="readonly", width=10)
+        self.sort_combo.pack(side="left", padx=(0, 12))
+
+        self.order_labels = {"Giảm dần": True, "Tăng dần": False}
+        self.order_var = tk.StringVar(value="Giảm dần")
+        self.order_combo = ttk.Combobox(filter_bar, textvariable=self.order_var,
+                                        values=list(self.order_labels.keys()),
+                                        state="readonly", width=10)
+        self.order_combo.pack(side="left", padx=(0, 12))
+
         ttk.Button(filter_bar, text="Lọc",
                    command=self.refresh).pack(side="left", padx=(0, 8))
         ttk.Button(filter_bar, text="Xoá giao dịch",
@@ -223,6 +246,14 @@ class TransactionListFrame(ttk.Frame):
         start = self.start_var.get().strip()
         end = self.end_var.get().strip()
         txs = self.tx_service.get_by_date_range(self.user.id, start, end)
+
+        selected_type = self.type_labels[self.type_var.get()]
+        if selected_type != "both":
+            txs = [t for t in txs if t.type == selected_type]
+
+        sort_key = self.sort_labels[self.sort_var.get()]
+        reverse = self.order_labels[self.order_var.get()]
+        txs = sorted(txs, key=lambda t: getattr(t, sort_key), reverse=reverse)
 
         income = expense = 0.0
         for t in txs:

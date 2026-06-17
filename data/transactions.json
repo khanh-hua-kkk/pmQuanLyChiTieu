@@ -10072,11 +10072,2001 @@
   {
     "id": 1008,
     "user_id": 7,
-    "category_id": 12,
-    "amount": 100000000.0,
+    "category_id": 10,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Internet cắt dây",
+    "date": "2026-03-31",
+    "created_at": "2026-03-31 17:12:58"
+  },
+  {
+    "id": 1009,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 5000000.0,
     "type": "income",
-    "note": "",
-    "date": "2026-06-13",
-    "created_at": "2026-06-13 14:09:09"
+    "note": "Lợi tức đầu tư",
+    "date": "2026-05-17",
+    "created_at": "2026-05-17 17:10:44"
+  },
+  {
+    "id": 1010,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Bảo dưỡng xe",
+    "date": "2026-04-28",
+    "created_at": "2026-04-28 18:13:37"
+  },
+  {
+    "id": 1011,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 300000.0,
+    "type": "expense",
+    "note": "Internet",
+    "date": "2026-03-22",
+    "created_at": "2026-03-22 19:01:32"
+  },
+  {
+    "id": 1012,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Bảo dưỡng xe",
+    "date": "2026-05-27",
+    "created_at": "2026-05-27 11:42:55"
+  },
+  {
+    "id": 1013,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Giày thể thao",
+    "date": "2026-05-08",
+    "created_at": "2026-05-08 19:54:37"
+  },
+  {
+    "id": 1014,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Tiền điện tháng này",
+    "date": "2026-06-11",
+    "created_at": "2026-06-11 15:16:11"
+  },
+  {
+    "id": 1015,
+    "user_id": 7,
+    "category_id": 1,
+    "amount": 45000.0,
+    "type": "expense",
+    "note": "Ăn tối nhà hàng",
+    "date": "2026-03-23",
+    "created_at": "2026-03-23 8:24:57"
+  },
+  {
+    "id": 1016,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Kiểm tra sức khỏe",
+    "date": "2026-04-05",
+    "created_at": "2026-04-05 12:55:53"
+  },
+  {
+    "id": 1017,
+    "user_id": 7,
+    "category_id": 13,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Phụ cấp",
+    "date": "2026-03-19",
+    "created_at": "2026-03-19 17:57:23"
+  },
+  {
+    "id": 1018,
+    "user_id": 7,
+    "category_id": 13,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Thưởng tháng",
+    "date": "2026-05-02",
+    "created_at": "2026-05-02 14:15:55"
+  },
+  {
+    "id": 1019,
+    "user_id": 7,
+    "category_id": 10,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Hóa đơn điện thoại",
+    "date": "2026-04-06",
+    "created_at": "2026-04-06 18:49:04"
+  },
+  {
+    "id": 1020,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Sách tham khảo",
+    "date": "2026-04-01",
+    "created_at": "2026-04-01 9:16:33"
+  },
+  {
+    "id": 1021,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Bảo dưỡng xe",
+    "date": "2026-05-16",
+    "created_at": "2026-05-16 20:10:31"
+  },
+  {
+    "id": 1022,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Lương tháng này",
+    "date": "2026-05-06",
+    "created_at": "2026-05-06 19:38:59"
+  },
+  {
+    "id": 1023,
+    "user_id": 7,
+    "category_id": 15,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Bán hàng online",
+    "date": "2026-04-10",
+    "created_at": "2026-04-10 14:16:36"
+  },
+  {
+    "id": 1024,
+    "user_id": 7,
+    "category_id": 11,
+    "amount": 4000000.0,
+    "type": "expense",
+    "note": "Đặt cọc nhà",
+    "date": "2026-06-05",
+    "created_at": "2026-06-05 16:05:13"
+  },
+  {
+    "id": 1025,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Nhỏ mắt",
+    "date": "2026-05-06",
+    "created_at": "2026-05-06 14:45:09"
+  },
+  {
+    "id": 1026,
+    "user_id": 7,
+    "category_id": 5,
+    "amount": 400000.0,
+    "type": "expense",
+    "note": "Tặng quà",
+    "date": "2026-06-12",
+    "created_at": "2026-06-12 8:51:03"
+  },
+  {
+    "id": 1027,
+    "user_id": 7,
+    "category_id": 10,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Hóa đơn mạng",
+    "date": "2026-04-27",
+    "created_at": "2026-04-27 14:27:43"
+  },
+  {
+    "id": 1028,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 250000.0,
+    "type": "expense",
+    "note": "Khóa học online",
+    "date": "2026-05-11",
+    "created_at": "2026-05-11 16:50:49"
+  },
+  {
+    "id": 1029,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 2000000.0,
+    "type": "expense",
+    "note": "Khóa học online",
+    "date": "2026-04-30",
+    "created_at": "2026-04-30 12:51:50"
+  },
+  {
+    "id": 1030,
+    "user_id": 7,
+    "category_id": 15,
+    "amount": 500000.0,
+    "type": "income",
+    "note": "Thu nhập thêm",
+    "date": "2026-04-01",
+    "created_at": "2026-04-01 15:51:58"
+  },
+  {
+    "id": 1031,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Tiền lương",
+    "date": "2026-04-04",
+    "created_at": "2026-04-04 18:28:33"
+  },
+  {
+    "id": 1032,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 15000000.0,
+    "type": "income",
+    "note": "Tiền lương",
+    "date": "2026-03-28",
+    "created_at": "2026-03-28 8:03:32"
+  },
+  {
+    "id": 1033,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Tiền lãi",
+    "date": "2026-05-07",
+    "created_at": "2026-05-07 8:53:00"
+  },
+  {
+    "id": 1034,
+    "user_id": 7,
+    "category_id": 10,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Hóa đơn mạng",
+    "date": "2026-05-18",
+    "created_at": "2026-05-18 11:31:03"
+  },
+  {
+    "id": 1035,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Mua hàng tạp hóa",
+    "date": "2026-04-04",
+    "created_at": "2026-04-04 12:55:42"
+  },
+  {
+    "id": 1036,
+    "user_id": 7,
+    "category_id": 1,
+    "amount": 65000.0,
+    "type": "expense",
+    "note": "Ăn tối nhà hàng",
+    "date": "2026-04-08",
+    "created_at": "2026-04-08 13:57:01"
+  },
+  {
+    "id": 1037,
+    "user_id": 7,
+    "category_id": 1,
+    "amount": 180000.0,
+    "type": "expense",
+    "note": "Pizza tối",
+    "date": "2026-03-20",
+    "created_at": "2026-03-20 15:49:24"
+  },
+  {
+    "id": 1038,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 8000000.0,
+    "type": "income",
+    "note": "Nhận lương",
+    "date": "2026-05-07",
+    "created_at": "2026-05-07 10:31:51"
+  },
+  {
+    "id": 1039,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Nha sỹ",
+    "date": "2026-04-02",
+    "created_at": "2026-04-02 8:48:20"
+  },
+  {
+    "id": 1040,
+    "user_id": 7,
+    "category_id": 13,
+    "amount": 3000000.0,
+    "type": "income",
+    "note": "Tiền thưởng",
+    "date": "2026-06-12",
+    "created_at": "2026-06-12 19:21:37"
+  },
+  {
+    "id": 1041,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Mua bàn chải",
+    "date": "2026-06-01",
+    "created_at": "2026-06-01 16:44:18"
+  },
+  {
+    "id": 1042,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 350000.0,
+    "type": "expense",
+    "note": "Giày thể thao",
+    "date": "2026-05-04",
+    "created_at": "2026-05-04 18:04:58"
+  },
+  {
+    "id": 1043,
+    "user_id": 7,
+    "category_id": 5,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Sinh nhật bạn",
+    "date": "2026-04-08",
+    "created_at": "2026-04-08 15:25:04"
+  },
+  {
+    "id": 1044,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Lợi tức đầu tư",
+    "date": "2026-06-12",
+    "created_at": "2026-06-12 11:21:00"
+  },
+  {
+    "id": 1045,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Thưởng kết thúc năm",
+    "date": "2026-03-23",
+    "created_at": "2026-03-23 8:42:14"
+  },
+  {
+    "id": 1046,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Sửa quần áo",
+    "date": "2026-05-04",
+    "created_at": "2026-05-04 18:16:15"
+  },
+  {
+    "id": 1047,
+    "user_id": 7,
+    "category_id": 15,
+    "amount": 500000.0,
+    "type": "income",
+    "note": "Làm freelance",
+    "date": "2026-04-19",
+    "created_at": "2026-04-19 8:46:59"
+  },
+  {
+    "id": 1048,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Bảo dưỡng xe",
+    "date": "2026-03-26",
+    "created_at": "2026-03-26 8:43:44"
+  },
+  {
+    "id": 1049,
+    "user_id": 7,
+    "category_id": 4,
+    "amount": 80000.0,
+    "type": "expense",
+    "note": "Sữa rửa mặt",
+    "date": "2026-05-03",
+    "created_at": "2026-05-03 9:17:16"
+  },
+  {
+    "id": 1050,
+    "user_id": 7,
+    "category_id": 4,
+    "amount": 80000.0,
+    "type": "expense",
+    "note": "Tổng hợp mỹ phẩm",
+    "date": "2026-04-03",
+    "created_at": "2026-04-03 14:41:05"
+  },
+  {
+    "id": 1051,
+    "user_id": 7,
+    "category_id": 11,
+    "amount": 5000000.0,
+    "type": "expense",
+    "note": "Thanh toán tiền nhà",
+    "date": "2026-06-02",
+    "created_at": "2026-06-02 14:52:15"
+  },
+  {
+    "id": 1052,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Thu nhập từ nhà cho thuê",
+    "date": "2026-04-14",
+    "created_at": "2026-04-14 17:32:09"
+  },
+  {
+    "id": 1053,
+    "user_id": 7,
+    "category_id": 1,
+    "amount": 85000.0,
+    "type": "expense",
+    "note": "Bánh mì chiều",
+    "date": "2026-03-23",
+    "created_at": "2026-03-23 19:20:31"
+  },
+  {
+    "id": 1054,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 250000.0,
+    "type": "expense",
+    "note": "Sách tham khảo",
+    "date": "2026-06-15",
+    "created_at": "2026-06-15 17:50:37"
+  },
+  {
+    "id": 1055,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Thưởng kết thúc năm",
+    "date": "2026-04-11",
+    "created_at": "2026-04-11 14:28:35"
+  },
+  {
+    "id": 1056,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 250000.0,
+    "type": "expense",
+    "note": "Học thêm",
+    "date": "2026-05-07",
+    "created_at": "2026-05-07 20:28:50"
+  },
+  {
+    "id": 1057,
+    "user_id": 7,
+    "category_id": 15,
+    "amount": 200000.0,
+    "type": "income",
+    "note": "Tư vấn",
+    "date": "2026-06-09",
+    "created_at": "2026-06-09 9:32:35"
+  },
+  {
+    "id": 1058,
+    "user_id": 7,
+    "category_id": 15,
+    "amount": 200000.0,
+    "type": "income",
+    "note": "Bán hàng online",
+    "date": "2026-06-02",
+    "created_at": "2026-06-02 13:56:08"
+  },
+  {
+    "id": 1059,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Bảo dưỡng xe",
+    "date": "2026-03-28",
+    "created_at": "2026-03-28 11:44:49"
+  },
+  {
+    "id": 1060,
+    "user_id": 7,
+    "category_id": 13,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Thưởng tháng",
+    "date": "2026-04-09",
+    "created_at": "2026-04-09 10:13:42"
+  },
+  {
+    "id": 1061,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 10000000.0,
+    "type": "income",
+    "note": "Tiền thưởng",
+    "date": "2026-05-04",
+    "created_at": "2026-05-04 14:31:04"
+  },
+  {
+    "id": 1062,
+    "user_id": 7,
+    "category_id": 5,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Ăn chơi với bạn",
+    "date": "2026-04-14",
+    "created_at": "2026-04-14 10:29:25"
+  },
+  {
+    "id": 1063,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Hoàn lại tiền",
+    "date": "2026-05-11",
+    "created_at": "2026-05-11 18:08:32"
+  },
+  {
+    "id": 1064,
+    "user_id": 7,
+    "category_id": 15,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Tư vấn",
+    "date": "2026-04-02",
+    "created_at": "2026-04-02 10:15:38"
+  },
+  {
+    "id": 1065,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Thu nhập từ nhà cho thuê",
+    "date": "2026-06-02",
+    "created_at": "2026-06-02 15:38:35"
+  },
+  {
+    "id": 1066,
+    "user_id": 7,
+    "category_id": 10,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Hóa đơn điện thoại",
+    "date": "2026-04-23",
+    "created_at": "2026-04-23 20:00:56"
+  },
+  {
+    "id": 1067,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Giày thể thao",
+    "date": "2026-05-24",
+    "created_at": "2026-05-24 16:20:51"
+  },
+  {
+    "id": 1068,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Sửa xe",
+    "date": "2026-06-09",
+    "created_at": "2026-06-09 17:29:09"
+  },
+  {
+    "id": 1069,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 250000.0,
+    "type": "expense",
+    "note": "Học thêm",
+    "date": "2026-06-04",
+    "created_at": "2026-06-04 20:35:26"
+  },
+  {
+    "id": 1070,
+    "user_id": 7,
+    "category_id": 13,
+    "amount": 500000.0,
+    "type": "income",
+    "note": "Phụ cấp",
+    "date": "2026-05-25",
+    "created_at": "2026-05-25 19:16:00"
+  },
+  {
+    "id": 1071,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 1000000.0,
+    "type": "expense",
+    "note": "Taxi",
+    "date": "2026-04-29",
+    "created_at": "2026-04-29 17:07:55"
+  },
+  {
+    "id": 1072,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Tiền lãi",
+    "date": "2026-04-05",
+    "created_at": "2026-04-05 10:34:28"
+  },
+  {
+    "id": 1073,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 400000.0,
+    "type": "expense",
+    "note": "Tiền điện tháng này",
+    "date": "2026-05-15",
+    "created_at": "2026-05-15 14:50:23"
+  },
+  {
+    "id": 1074,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 600000.0,
+    "type": "expense",
+    "note": "Tiền nước",
+    "date": "2026-04-19",
+    "created_at": "2026-04-19 19:16:54"
+  },
+  {
+    "id": 1075,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 8000000.0,
+    "type": "income",
+    "note": "Nhận lương",
+    "date": "2026-03-17",
+    "created_at": "2026-03-17 18:25:05"
+  },
+  {
+    "id": 1076,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 10000000.0,
+    "type": "income",
+    "note": "Lương tháng này",
+    "date": "2026-04-11",
+    "created_at": "2026-04-11 20:03:09"
+  },
+  {
+    "id": 1077,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Bảo dưỡng xe",
+    "date": "2026-05-20",
+    "created_at": "2026-05-20 8:12:10"
+  },
+  {
+    "id": 1078,
+    "user_id": 7,
+    "category_id": 4,
+    "amount": 350000.0,
+    "type": "expense",
+    "note": "Sữa rửa mặt",
+    "date": "2026-04-02",
+    "created_at": "2026-04-02 16:47:42"
+  },
+  {
+    "id": 1079,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Lương công việc chính",
+    "date": "2026-06-10",
+    "created_at": "2026-06-10 19:54:23"
+  },
+  {
+    "id": 1080,
+    "user_id": 7,
+    "category_id": 5,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Tiệc công ty",
+    "date": "2026-06-03",
+    "created_at": "2026-06-03 18:27:23"
+  },
+  {
+    "id": 1081,
+    "user_id": 7,
+    "category_id": 5,
+    "amount": 250000.0,
+    "type": "expense",
+    "note": "Sinh nhật bạn",
+    "date": "2026-05-01",
+    "created_at": "2026-05-01 15:24:19"
+  },
+  {
+    "id": 1082,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Cổ tức",
+    "date": "2026-03-15",
+    "created_at": "2026-03-15 8:03:47"
+  },
+  {
+    "id": 1083,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Dùng cụm",
+    "date": "2026-05-15",
+    "created_at": "2026-05-15 8:11:58"
+  },
+  {
+    "id": 1084,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 350000.0,
+    "type": "expense",
+    "note": "Bộ quần áo",
+    "date": "2026-05-05",
+    "created_at": "2026-05-05 14:53:40"
+  },
+  {
+    "id": 1085,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 150000.0,
+    "type": "expense",
+    "note": "Mua hàng tạp hóa",
+    "date": "2026-03-31",
+    "created_at": "2026-03-31 16:41:05"
+  },
+  {
+    "id": 1086,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 300000.0,
+    "type": "expense",
+    "note": "Internet",
+    "date": "2026-04-10",
+    "created_at": "2026-04-10 9:05:55"
+  },
+  {
+    "id": 1087,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 8000000.0,
+    "type": "income",
+    "note": "Lương công việc chính",
+    "date": "2026-05-19",
+    "created_at": "2026-05-19 19:44:12"
+  },
+  {
+    "id": 1088,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Tiền lương",
+    "date": "2026-03-20",
+    "created_at": "2026-03-20 14:01:34"
+  },
+  {
+    "id": 1089,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 1000000.0,
+    "type": "expense",
+    "note": "Học skill",
+    "date": "2026-04-26",
+    "created_at": "2026-04-26 14:50:47"
+  },
+  {
+    "id": 1090,
+    "user_id": 7,
+    "category_id": 5,
+    "amount": 150000.0,
+    "type": "expense",
+    "note": "Sinh nhật bạn",
+    "date": "2026-04-13",
+    "created_at": "2026-04-13 9:31:00"
+  },
+  {
+    "id": 1091,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 400000.0,
+    "type": "expense",
+    "note": "Tiền điện tháng này",
+    "date": "2026-04-07",
+    "created_at": "2026-04-07 16:57:41"
+  },
+  {
+    "id": 1092,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Thu nhập từ nhà cho thuê",
+    "date": "2026-06-12",
+    "created_at": "2026-06-12 20:26:09"
+  },
+  {
+    "id": 1093,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 1000000.0,
+    "type": "expense",
+    "note": "Xăng xe",
+    "date": "2026-04-22",
+    "created_at": "2026-04-22 10:53:08"
+  },
+  {
+    "id": 1094,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Lương tháng này",
+    "date": "2026-05-07",
+    "created_at": "2026-05-07 17:42:04"
+  },
+  {
+    "id": 1095,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Tổng hợp thuốc",
+    "date": "2026-04-16",
+    "created_at": "2026-04-16 14:57:47"
+  },
+  {
+    "id": 1096,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Tiền nước",
+    "date": "2026-06-05",
+    "created_at": "2026-06-05 18:55:02"
+  },
+  {
+    "id": 1097,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 750000.0,
+    "type": "expense",
+    "note": "Mua áo phông",
+    "date": "2026-04-24",
+    "created_at": "2026-04-24 10:54:59"
+  },
+  {
+    "id": 1098,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Khóa học online",
+    "date": "2026-04-24",
+    "created_at": "2026-04-24 19:21:34"
+  },
+  {
+    "id": 1099,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 10000000.0,
+    "type": "income",
+    "note": "Nhận lương",
+    "date": "2026-06-06",
+    "created_at": "2026-06-06 17:41:16"
+  },
+  {
+    "id": 1100,
+    "user_id": 7,
+    "category_id": 11,
+    "amount": 3000000.0,
+    "type": "expense",
+    "note": "Đặt cọc nhà",
+    "date": "2026-03-25",
+    "created_at": "2026-03-25 17:54:12"
+  },
+  {
+    "id": 1101,
+    "user_id": 7,
+    "category_id": 11,
+    "amount": 4000000.0,
+    "type": "expense",
+    "note": "Thanh toán tiền nhà",
+    "date": "2026-05-09",
+    "created_at": "2026-05-09 17:31:26"
+  },
+  {
+    "id": 1102,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Sửa xe",
+    "date": "2026-04-29",
+    "created_at": "2026-04-29 18:04:53"
+  },
+  {
+    "id": 1103,
+    "user_id": 7,
+    "category_id": 1,
+    "amount": 85000.0,
+    "type": "expense",
+    "note": "Cơm trưa",
+    "date": "2026-05-16",
+    "created_at": "2026-05-16 20:32:38"
+  },
+  {
+    "id": 1104,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 1000000.0,
+    "type": "expense",
+    "note": "Xăng xe",
+    "date": "2026-05-12",
+    "created_at": "2026-05-12 18:18:21"
+  },
+  {
+    "id": 1105,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 600000.0,
+    "type": "expense",
+    "note": "Tiền điện tháng này",
+    "date": "2026-06-05",
+    "created_at": "2026-06-05 12:29:21"
+  },
+  {
+    "id": 1106,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Xăng xe",
+    "date": "2026-04-22",
+    "created_at": "2026-04-22 18:02:37"
+  },
+  {
+    "id": 1107,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Mua bàn chải",
+    "date": "2026-04-09",
+    "created_at": "2026-04-09 18:43:54"
+  },
+  {
+    "id": 1108,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Khoa hoc online",
+    "date": "2026-05-04",
+    "created_at": "2026-05-04 12:46:30"
+  },
+  {
+    "id": 1109,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 2000000.0,
+    "type": "expense",
+    "note": "Hoc skill",
+    "date": "2026-05-11",
+    "created_at": "2026-05-11 16:41:38"
+  },
+  {
+    "id": 1110,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 10000000.0,
+    "type": "income",
+    "note": "Tien luong",
+    "date": "2026-05-27",
+    "created_at": "2026-05-27 14:24:35"
+  },
+  {
+    "id": 1111,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Sua xe",
+    "date": "2026-05-25",
+    "created_at": "2026-05-25 17:01:09"
+  },
+  {
+    "id": 1112,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 10000000.0,
+    "type": "income",
+    "note": "Hoan lai tien",
+    "date": "2026-05-16",
+    "created_at": "2026-05-16 15:07:13"
+  },
+  {
+    "id": 1113,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 350000.0,
+    "type": "expense",
+    "note": "Bo quan ao",
+    "date": "2026-05-07",
+    "created_at": "2026-05-07 17:16:54"
+  },
+  {
+    "id": 1114,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Sua quan ao",
+    "date": "2026-05-05",
+    "created_at": "2026-05-05 16:58:49"
+  },
+  {
+    "id": 1115,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 600000.0,
+    "type": "expense",
+    "note": "Hoa don utilities",
+    "date": "2026-05-20",
+    "created_at": "2026-05-20 16:57:41"
+  },
+  {
+    "id": 1116,
+    "user_id": 7,
+    "category_id": 13,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Thuong thang",
+    "date": "2026-05-20",
+    "created_at": "2026-05-20 17:59:29"
+  },
+  {
+    "id": 1117,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 500000.0,
+    "type": "income",
+    "note": "Tien lai",
+    "date": "2026-05-25",
+    "created_at": "2026-05-25 11:06:41"
+  },
+  {
+    "id": 1118,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Thuong ket thuc nam",
+    "date": "2026-05-30",
+    "created_at": "2026-05-30 13:12:52"
+  },
+  {
+    "id": 1119,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 350000.0,
+    "type": "expense",
+    "note": "Mua ao phong",
+    "date": "2026-05-18",
+    "created_at": "2026-05-18 13:28:25"
+  },
+  {
+    "id": 1120,
+    "user_id": 7,
+    "category_id": 15,
+    "amount": 200000.0,
+    "type": "income",
+    "note": "Lam freelance",
+    "date": "2026-05-03",
+    "created_at": "2026-05-03 13:39:12"
+  },
+  {
+    "id": 1121,
+    "user_id": 7,
+    "category_id": 4,
+    "amount": 120000.0,
+    "type": "expense",
+    "note": "Dau goi",
+    "date": "2026-05-22",
+    "created_at": "2026-05-22 15:30:23"
+  },
+  {
+    "id": 1122,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Mua ao phong",
+    "date": "2026-05-09",
+    "created_at": "2026-05-09 18:36:34"
+  },
+  {
+    "id": 1123,
+    "user_id": 7,
+    "category_id": 11,
+    "amount": 3000000.0,
+    "type": "expense",
+    "note": "Tien nha thang nay",
+    "date": "2026-05-19",
+    "created_at": "2026-05-19 19:22:32"
+  },
+  {
+    "id": 1124,
+    "user_id": 7,
+    "category_id": 4,
+    "amount": 80000.0,
+    "type": "expense",
+    "note": "Tong hop my pham",
+    "date": "2026-05-05",
+    "created_at": "2026-05-05 10:54:50"
+  },
+  {
+    "id": 1125,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 600000.0,
+    "type": "expense",
+    "note": "Hoa don utilities",
+    "date": "2026-05-08",
+    "created_at": "2026-05-08 9:33:15"
+  },
+  {
+    "id": 1126,
+    "user_id": 7,
+    "category_id": 10,
+    "amount": 300000.0,
+    "type": "expense",
+    "note": "Hoa don mang",
+    "date": "2026-05-27",
+    "created_at": "2026-05-27 16:02:25"
+  },
+  {
+    "id": 1127,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Mua ao phong",
+    "date": "2026-05-27",
+    "created_at": "2026-05-27 16:44:07"
+  },
+  {
+    "id": 1128,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Mua hang tap hoa",
+    "date": "2026-05-20",
+    "created_at": "2026-05-20 13:56:37"
+  },
+  {
+    "id": 1129,
+    "user_id": 7,
+    "category_id": 15,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Ban hang online",
+    "date": "2026-05-15",
+    "created_at": "2026-05-15 10:59:29"
+  },
+  {
+    "id": 1130,
+    "user_id": 7,
+    "category_id": 4,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Tong hop my pham",
+    "date": "2026-05-10",
+    "created_at": "2026-05-10 10:51:58"
+  },
+  {
+    "id": 1131,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Tien luong",
+    "date": "2026-05-05",
+    "created_at": "2026-05-05 10:27:28"
+  },
+  {
+    "id": 1132,
+    "user_id": 7,
+    "category_id": 5,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Sinh nhat ban",
+    "date": "2026-05-21",
+    "created_at": "2026-05-21 15:41:36"
+  },
+  {
+    "id": 1133,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Tien thuong",
+    "date": "2026-05-10",
+    "created_at": "2026-05-10 15:37:02"
+  },
+  {
+    "id": 1134,
+    "user_id": 7,
+    "category_id": 10,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Hoa don mang",
+    "date": "2026-05-29",
+    "created_at": "2026-05-29 19:57:26"
+  },
+  {
+    "id": 1135,
+    "user_id": 7,
+    "category_id": 4,
+    "amount": 350000.0,
+    "type": "expense",
+    "note": "Kem duong",
+    "date": "2026-05-08",
+    "created_at": "2026-05-08 20:16:54"
+  },
+  {
+    "id": 1136,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 500000.0,
+    "type": "income",
+    "note": "Loi tuc dau tu",
+    "date": "2026-05-28",
+    "created_at": "2026-05-28 10:19:49"
+  },
+  {
+    "id": 1137,
+    "user_id": 7,
+    "category_id": 1,
+    "amount": 120000.0,
+    "type": "expense",
+    "note": "Ca phe sang",
+    "date": "2026-05-04",
+    "created_at": "2026-05-04 10:30:44"
+  },
+  {
+    "id": 1138,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Xang xe",
+    "date": "2026-05-02",
+    "created_at": "2026-05-02 20:01:13"
+  },
+  {
+    "id": 1139,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 150000.0,
+    "type": "expense",
+    "note": "Dung cum",
+    "date": "2026-05-09",
+    "created_at": "2026-05-09 10:07:53"
+  },
+  {
+    "id": 1140,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 250000.0,
+    "type": "expense",
+    "note": "Hoc skill",
+    "date": "2026-05-04",
+    "created_at": "2026-05-04 14:44:16"
+  },
+  {
+    "id": 1141,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 250000.0,
+    "type": "expense",
+    "note": "Hoc them",
+    "date": "2026-05-09",
+    "created_at": "2026-05-09 17:31:49"
+  },
+  {
+    "id": 1142,
+    "user_id": 7,
+    "category_id": 11,
+    "amount": 2000000.0,
+    "type": "expense",
+    "note": "Tien nha thang nay",
+    "date": "2026-05-19",
+    "created_at": "2026-05-19 12:32:17"
+  },
+  {
+    "id": 1143,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 300000.0,
+    "type": "expense",
+    "note": "Internet",
+    "date": "2026-05-01",
+    "created_at": "2026-05-01 12:41:18"
+  },
+  {
+    "id": 1144,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Co tuc",
+    "date": "2026-05-31",
+    "created_at": "2026-05-31 17:02:23"
+  },
+  {
+    "id": 1145,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Mua hang tap hoa",
+    "date": "2026-05-06",
+    "created_at": "2026-05-06 12:01:56"
+  },
+  {
+    "id": 1146,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Nho mat",
+    "date": "2026-05-11",
+    "created_at": "2026-05-11 8:37:03"
+  },
+  {
+    "id": 1147,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Tong hop thuoc",
+    "date": "2026-05-13",
+    "created_at": "2026-05-13 9:17:45"
+  },
+  {
+    "id": 1148,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Mua hang tap hoa",
+    "date": "2026-05-02",
+    "created_at": "2026-05-02 8:13:12"
+  },
+  {
+    "id": 1149,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Thuong ket thuc nam",
+    "date": "2026-05-31",
+    "created_at": "2026-05-31 10:37:06"
+  },
+  {
+    "id": 1150,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 15000000.0,
+    "type": "income",
+    "note": "Tien luong",
+    "date": "2026-05-15",
+    "created_at": "2026-05-15 8:54:49"
+  },
+  {
+    "id": 1151,
+    "user_id": 7,
+    "category_id": 11,
+    "amount": 4000000.0,
+    "type": "expense",
+    "note": "Tien nha thang nay",
+    "date": "2026-05-11",
+    "created_at": "2026-05-11 16:17:51"
+  },
+  {
+    "id": 1152,
+    "user_id": 7,
+    "category_id": 5,
+    "amount": 400000.0,
+    "type": "expense",
+    "note": "Tiec cong ty",
+    "date": "2026-05-25",
+    "created_at": "2026-05-25 19:42:43"
+  },
+  {
+    "id": 1153,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Nho mat",
+    "date": "2026-05-11",
+    "created_at": "2026-05-11 12:05:35"
+  },
+  {
+    "id": 1154,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Taxi",
+    "date": "2026-05-11",
+    "created_at": "2026-05-11 13:43:16"
+  },
+  {
+    "id": 1155,
+    "user_id": 7,
+    "category_id": 1,
+    "amount": 120000.0,
+    "type": "expense",
+    "note": "Ca phe sang",
+    "date": "2026-05-29",
+    "created_at": "2026-05-29 12:46:21"
+  },
+  {
+    "id": 1156,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Xe bus",
+    "date": "2026-05-07",
+    "created_at": "2026-05-07 15:16:06"
+  },
+  {
+    "id": 1157,
+    "user_id": 7,
+    "category_id": 4,
+    "amount": 350000.0,
+    "type": "expense",
+    "note": "Kem duong",
+    "date": "2026-05-18",
+    "created_at": "2026-05-18 11:51:28"
+  },
+  {
+    "id": 1158,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 1000000.0,
+    "type": "expense",
+    "note": "Khoa tieng anh",
+    "date": "2026-05-03",
+    "created_at": "2026-05-03 18:30:37"
+  },
+  {
+    "id": 1159,
+    "user_id": 7,
+    "category_id": 1,
+    "amount": 85000.0,
+    "type": "expense",
+    "note": "An toi nha hang",
+    "date": "2026-05-25",
+    "created_at": "2026-05-25 16:18:10"
+  },
+  {
+    "id": 1160,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Nha sy",
+    "date": "2026-05-07",
+    "created_at": "2026-05-07 9:46:00"
+  },
+  {
+    "id": 1161,
+    "user_id": 7,
+    "category_id": 4,
+    "amount": 120000.0,
+    "type": "expense",
+    "note": "Sua rua mat",
+    "date": "2026-05-17",
+    "created_at": "2026-05-17 17:09:23"
+  },
+  {
+    "id": 1162,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Thuong hieu suat",
+    "date": "2026-05-07",
+    "created_at": "2026-05-07 16:22:08"
+  },
+  {
+    "id": 1163,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 10000000.0,
+    "type": "income",
+    "note": "Luong cong viec chinh",
+    "date": "2026-05-28",
+    "created_at": "2026-05-28 13:47:30"
+  },
+  {
+    "id": 1164,
+    "user_id": 7,
+    "category_id": 13,
+    "amount": 3000000.0,
+    "type": "income",
+    "note": "Thuong thang",
+    "date": "2026-05-01",
+    "created_at": "2026-05-01 16:22:43"
+  },
+  {
+    "id": 1165,
+    "user_id": 7,
+    "category_id": 15,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Ban hang online",
+    "date": "2026-05-19",
+    "created_at": "2026-05-19 9:49:05"
+  },
+  {
+    "id": 1166,
+    "user_id": 7,
+    "category_id": 5,
+    "amount": 150000.0,
+    "type": "expense",
+    "note": "An choi voi ban",
+    "date": "2026-05-02",
+    "created_at": "2026-05-02 10:54:36"
+  },
+  {
+    "id": 1167,
+    "user_id": 7,
+    "category_id": 5,
+    "amount": 250000.0,
+    "type": "expense",
+    "note": "Sinh nhat ban",
+    "date": "2026-05-02",
+    "created_at": "2026-05-02 10:01:25"
+  },
+  {
+    "id": 1168,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Thu nhap tu nha cho thue",
+    "date": "2026-05-19",
+    "created_at": "2026-05-19 10:56:58"
+  },
+  {
+    "id": 1169,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 400000.0,
+    "type": "expense",
+    "note": "Tien nuoc",
+    "date": "2026-05-22",
+    "created_at": "2026-05-22 17:01:02"
+  },
+  {
+    "id": 1170,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Ao khoac",
+    "date": "2026-05-02",
+    "created_at": "2026-05-02 10:50:35"
+  },
+  {
+    "id": 1171,
+    "user_id": 7,
+    "category_id": 13,
+    "amount": 500000.0,
+    "type": "income",
+    "note": "Hoa hong",
+    "date": "2026-05-29",
+    "created_at": "2026-05-29 8:13:20"
+  },
+  {
+    "id": 1172,
+    "user_id": 7,
+    "category_id": 5,
+    "amount": 400000.0,
+    "type": "expense",
+    "note": "An choi voi ban",
+    "date": "2026-05-29",
+    "created_at": "2026-05-29 12:48:37"
+  },
+  {
+    "id": 1173,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Thuong hieu suat",
+    "date": "2026-05-22",
+    "created_at": "2026-05-22 18:55:56"
+  },
+  {
+    "id": 1174,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Tien lai",
+    "date": "2026-05-26",
+    "created_at": "2026-05-26 11:44:17"
+  },
+  {
+    "id": 1175,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Mua hang tap hoa",
+    "date": "2026-05-30",
+    "created_at": "2026-05-30 13:51:18"
+  },
+  {
+    "id": 1176,
+    "user_id": 7,
+    "category_id": 8,
+    "amount": 300000.0,
+    "type": "expense",
+    "note": "Internet",
+    "date": "2026-05-12",
+    "created_at": "2026-05-12 9:17:47"
+  },
+  {
+    "id": 1177,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Hoan lai tien",
+    "date": "2026-05-24",
+    "created_at": "2026-05-24 16:13:39"
+  },
+  {
+    "id": 1178,
+    "user_id": 7,
+    "category_id": 16,
+    "amount": 1000000.0,
+    "type": "income",
+    "note": "Tien lai",
+    "date": "2026-05-03",
+    "created_at": "2026-05-03 17:40:08"
+  },
+  {
+    "id": 1179,
+    "user_id": 7,
+    "category_id": 13,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Hoa hong",
+    "date": "2026-05-21",
+    "created_at": "2026-05-21 9:32:59"
+  },
+  {
+    "id": 1180,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Nho mat",
+    "date": "2026-05-18",
+    "created_at": "2026-05-18 8:13:39"
+  },
+  {
+    "id": 1181,
+    "user_id": 7,
+    "category_id": 1,
+    "amount": 180000.0,
+    "type": "expense",
+    "note": "Ca phe sang",
+    "date": "2026-05-28",
+    "created_at": "2026-05-28 9:28:54"
+  },
+  {
+    "id": 1182,
+    "user_id": 7,
+    "category_id": 11,
+    "amount": 2000000.0,
+    "type": "expense",
+    "note": "Dat cop nha",
+    "date": "2026-05-02",
+    "created_at": "2026-05-02 20:31:34"
+  },
+  {
+    "id": 1183,
+    "user_id": 7,
+    "category_id": 10,
+    "amount": 300000.0,
+    "type": "expense",
+    "note": "Hoa don dien thoai",
+    "date": "2026-05-08",
+    "created_at": "2026-05-08 19:10:50"
+  },
+  {
+    "id": 1184,
+    "user_id": 7,
+    "category_id": 1,
+    "amount": 65000.0,
+    "type": "expense",
+    "note": "Banh mi chieu",
+    "date": "2026-05-03",
+    "created_at": "2026-05-03 8:58:12"
+  },
+  {
+    "id": 1185,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Sua quan ao",
+    "date": "2026-05-15",
+    "created_at": "2026-05-15 13:38:39"
+  },
+  {
+    "id": 1186,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Nha sy",
+    "date": "2026-05-23",
+    "created_at": "2026-05-23 14:54:34"
+  },
+  {
+    "id": 1187,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 15000000.0,
+    "type": "income",
+    "note": "Luong thang nay",
+    "date": "2026-05-27",
+    "created_at": "2026-05-27 16:22:29"
+  },
+  {
+    "id": 1188,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Xang xe",
+    "date": "2026-05-05",
+    "created_at": "2026-05-05 9:11:08"
+  },
+  {
+    "id": 1189,
+    "user_id": 7,
+    "category_id": 14,
+    "amount": 2000000.0,
+    "type": "income",
+    "note": "Thuong hieu suat",
+    "date": "2026-05-11",
+    "created_at": "2026-05-11 15:35:23"
+  },
+  {
+    "id": 1190,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Mua hang tap hoa",
+    "date": "2026-05-15",
+    "created_at": "2026-05-15 13:26:56"
+  },
+  {
+    "id": 1191,
+    "user_id": 7,
+    "category_id": 12,
+    "amount": 5000000.0,
+    "type": "income",
+    "note": "Luong cong viec chinh",
+    "date": "2026-05-08",
+    "created_at": "2026-05-08 16:29:57"
+  },
+  {
+    "id": 1192,
+    "user_id": 7,
+    "category_id": 4,
+    "amount": 120000.0,
+    "type": "expense",
+    "note": "Sua rua mat",
+    "date": "2026-05-14",
+    "created_at": "2026-05-14 13:24:58"
+  },
+  {
+    "id": 1193,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Mua quan jean",
+    "date": "2026-05-07",
+    "created_at": "2026-05-07 13:41:34"
+  },
+  {
+    "id": 1194,
+    "user_id": 7,
+    "category_id": 15,
+    "amount": 500000.0,
+    "type": "income",
+    "note": "Tu van",
+    "date": "2026-05-10",
+    "created_at": "2026-05-10 18:42:56"
+  },
+  {
+    "id": 1195,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Nho mat",
+    "date": "2026-05-31",
+    "created_at": "2026-05-31 12:05:46"
+  },
+  {
+    "id": 1196,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Dung cum",
+    "date": "2026-05-16",
+    "created_at": "2026-05-16 18:49:18"
+  },
+  {
+    "id": 1197,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 350000.0,
+    "type": "expense",
+    "note": "Giay the thao",
+    "date": "2026-05-28",
+    "created_at": "2026-05-28 18:39:45"
+  },
+  {
+    "id": 1198,
+    "user_id": 7,
+    "category_id": 3,
+    "amount": 500000.0,
+    "type": "expense",
+    "note": "Giay the thao",
+    "date": "2026-05-23",
+    "created_at": "2026-05-23 10:22:14"
+  },
+  {
+    "id": 1199,
+    "user_id": 7,
+    "category_id": 4,
+    "amount": 350000.0,
+    "type": "expense",
+    "note": "Kem duong",
+    "date": "2026-05-09",
+    "created_at": "2026-05-09 12:32:11"
+  },
+  {
+    "id": 1200,
+    "user_id": 7,
+    "category_id": 10,
+    "amount": 300000.0,
+    "type": "expense",
+    "note": "Hoa don dien thoai",
+    "date": "2026-05-24",
+    "created_at": "2026-05-24 17:31:10"
+  },
+  {
+    "id": 1201,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Taxi",
+    "date": "2026-05-01",
+    "created_at": "2026-05-01 12:22:23"
+  },
+  {
+    "id": 1202,
+    "user_id": 7,
+    "category_id": 9,
+    "amount": 50000.0,
+    "type": "expense",
+    "note": "Taxi",
+    "date": "2026-05-14",
+    "created_at": "2026-05-14 13:23:00"
+  },
+  {
+    "id": 1203,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 100000.0,
+    "type": "expense",
+    "note": "Hoc skill",
+    "date": "2026-05-24",
+    "created_at": "2026-05-24 8:50:08"
+  },
+  {
+    "id": 1204,
+    "user_id": 7,
+    "category_id": 1,
+    "amount": 45000.0,
+    "type": "expense",
+    "note": "Banh mi chieu",
+    "date": "2026-05-17",
+    "created_at": "2026-05-17 16:53:38"
+  },
+  {
+    "id": 1205,
+    "user_id": 7,
+    "category_id": 6,
+    "amount": 1000000.0,
+    "type": "expense",
+    "note": "Kiem tra suc khoe",
+    "date": "2026-05-24",
+    "created_at": "2026-05-24 12:46:56"
+  },
+  {
+    "id": 1206,
+    "user_id": 7,
+    "category_id": 2,
+    "amount": 200000.0,
+    "type": "expense",
+    "note": "Sua quan ao",
+    "date": "2026-05-28",
+    "created_at": "2026-05-28 15:38:18"
+  },
+  {
+    "id": 1207,
+    "user_id": 7,
+    "category_id": 7,
+    "amount": 250000.0,
+    "type": "expense",
+    "note": "Hoc them",
+    "date": "2026-05-31",
+    "created_at": "2026-05-31 19:20:42"
   }
 ]
