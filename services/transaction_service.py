@@ -9,6 +9,27 @@ class TransactionService:
         self.budget_repo = BudgetRepository()
         self.category_repo = CategoryRepository()
 
+    # ── Xác thực ngày tháng ────────────────────────────────
+
+    def _validate_date(self, date_str):
+        """
+        Xác thực ngày nhập vào.
+        Trả về (is_valid: bool, error_message: str)
+        """
+        # Kiểm tra định dạng
+        if not date_str or not isinstance(date_str, str):
+            return False, "Ngày không được để trống."
+        
+        if len(date_str) != 10 or date_str[4] != '-' or date_str[7] != '-':
+            return False, "Định dạng ngày phải là YYYY-MM-DD."
+        
+        try:
+            date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+        except ValueError:
+            return False, "Ngày không hợp lệ."
+        
+        return True, ""
+
     # ── Thêm giao dịch ────────────────────────────────────
 
     def add_transaction(self, user_id, category_id, amount, type, note="", date=None):
@@ -21,6 +42,12 @@ class TransactionService:
             raise ValueError("Số tiền phải lớn hơn 0.")
         if type not in ("income", "expense"):
             raise ValueError("Loại giao dịch phải là 'income' hoặc 'expense'.")
+        
+        # Xác thực ngày
+        date_to_use = date or datetime.now().strftime("%Y-%m-%d")
+        is_valid, error_msg = self._validate_date(date_to_use)
+        if not is_valid:
+            raise ValueError(error_msg)
 
         tx = Transaction(
             id=0,
@@ -29,7 +56,7 @@ class TransactionService:
             amount=amount,
             type=type,
             note=note,
-            date=date or datetime.now().strftime("%Y-%m-%d"),
+            date=date_to_use,
         )
         saved_tx = self.tx_repo.add(tx)
 
