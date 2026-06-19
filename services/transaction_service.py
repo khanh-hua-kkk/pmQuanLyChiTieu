@@ -30,6 +30,34 @@ class TransactionService:
         
         return True, ""
 
+    # ── Xác thực số tiền ───────────────────────────────────
+
+    def _validate_and_normalize_amount(self, amount):
+        """
+        Xác thực và chuẩn hóa số tiền.
+        - Chuyển đổi thành float
+        - Kiểm tra > 0
+        - Làm tròn 2 chữ số thập phân
+        Trả về (is_valid: bool, amount_normalized: float, error_message: str)
+        """
+        if not amount:
+            return False, None, "Số tiền không được để trống."
+        
+        try:
+            # Chuyển đổi thành float (đã được chuẩn hóa từ UI)
+            amount_float = float(amount)
+        except (ValueError, TypeError):
+            return False, None, "Số tiền không hợp lệ. Vui lòng nhập số."
+        
+        # Kiểm tra > 0
+        if amount_float <= 0:
+            return False, None, "Số tiền phải lớn hơn 0."
+        
+        # Làm tròn 2 chữ số thập phân
+        amount_normalized = round(amount_float, 2)
+        
+        return True, amount_normalized, ""
+
     # ── Thêm giao dịch ────────────────────────────────────
 
     def add_transaction(self, user_id, category_id, amount, type, note="", date=None):
@@ -38,8 +66,11 @@ class TransactionService:
         alert = None nếu không vượt budget.
         alert = dict nếu vượt budget: { category_name, spent, limit, exceeded_by }
         """
-        if amount <= 0:
-            raise ValueError("Số tiền phải lớn hơn 0.")
+        # Xác thực và chuẩn hóa số tiền
+        is_valid, amount_normalized, error_msg = self._validate_and_normalize_amount(amount)
+        if not is_valid:
+            raise ValueError(error_msg)
+        
         if type not in ("income", "expense"):
             raise ValueError("Loại giao dịch phải là 'income' hoặc 'expense'.")
         
@@ -53,7 +84,7 @@ class TransactionService:
             id=0,
             user_id=user_id,
             category_id=category_id,
-            amount=amount,
+            amount=amount_normalized,
             type=type,
             note=note,
             date=date_to_use,
@@ -87,12 +118,31 @@ class TransactionService:
     # ── Sửa / Xoá ─────────────────────────────────────────
 
     def update_transaction(self, tx_id, user_id, **fields):
+        """
+        Cập nhật giao dịch. Xác thực số tiền và ngày nếu được cập nhật.
+        """
         tx = self.tx_repo.get_by_id(tx_id)
         if tx is None or tx.user_id != user_id:
             raise ValueError("Giao dịch không tồn tại hoặc không có quyền.")
+        
+        # Xác thực số tiền nếu được cập nhật
+        if "amount" in fields and fields["amount"] is not None:
+            is_valid, amount_normalized, error_msg = self._validate_and_normalize_amount(fields["amount"])
+            if not is_valid:
+                raise ValueError(error_msg)
+            fields["amount"] = amount_normalized
+        
+        # Xác thực ngày nếu được cập nhật
+        if "date" in fields and fields["date"] is not None:
+            is_valid, error_msg = self._validate_date(fields["date"])
+            if not is_valid:
+                raise ValueError(error_msg)
+        
+        # Cập nhật các trường
         for key, value in fields.items():
-            if hasattr(tx, key):
+            if hasattr(tx, key) and value is not None:
                 setattr(tx, key, value)
+        
         return self.tx_repo.update(tx_id, tx)
 
     def delete_transaction(self, tx_id, user_id):

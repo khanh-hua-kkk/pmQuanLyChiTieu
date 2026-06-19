@@ -43,6 +43,9 @@ class AddTransactionFrame(ttk.Frame):
         self.amount_var = tk.StringVar()
         ttk.Entry(self, textvariable=self.amount_var).grid(
             row=2, column=1, sticky="ew")
+        ttk.Label(self, text="Ví dụ: 1000000 hoặc 1000000.50 (dấu . hoặc , đều được)",
+                  style="Muted.TLabel").grid(
+            row=2, column=1, sticky="e", pady=(24, 0))
 
         # Danh mục
         ttk.Label(self, text="Danh mục").grid(
@@ -102,11 +105,9 @@ class AddTransactionFrame(ttk.Frame):
 
     def _save(self):
         self.alert_lbl.config(text="")
-        try:
-            amount = float(self.amount_var.get().replace(",", ""))
-        except ValueError:
-            messagebox.showerror("Lỗi", "Số tiền không hợp lệ.")
-            return
+        
+        # Chuẩn hóa số tiền: thay dấu phẩy bằng dấu chấm
+        amount_str = self.amount_var.get().strip().replace(",", ".")
 
         cat_name = self.cat_var.get()
         cat = next((c for c in self._categories if c.name == cat_name), None)
@@ -122,7 +123,7 @@ class AddTransactionFrame(ttk.Frame):
             tx, alert = self.tx_service.add_transaction(
                 user_id=self.user.id,
                 category_id=cat.id,
-                amount=amount,
+                amount=amount_str,
                 type=type_,
                 note=note,
                 date=date,

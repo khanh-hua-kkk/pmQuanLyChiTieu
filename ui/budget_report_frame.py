@@ -42,6 +42,8 @@ class BudgetFrame(ttk.Frame):
             value=datetime.now().strftime("%Y-%m"))
         ttk.Entry(top, textvariable=self.month_var,
                   width=10).pack(side="left", padx=(0, 8))
+        ttk.Label(top, text="Ví dụ: 2026-06",
+                  style="Muted.TLabel").pack(side="left", padx=(0, 8))
         ttk.Button(top, text="Xem",
                    command=self.refresh).pack(side="left")
 
@@ -156,7 +158,11 @@ class BudgetFrame(ttk.Frame):
         for w in self.budget_container.winfo_children():
             w.destroy()
         month = self.month_var.get().strip()
-        statuses = self.budget_service.get_month_status(self.user.id, month)
+        try:
+            statuses = self.budget_service.get_month_status(self.user.id, month)
+        except ValueError as e:
+            messagebox.showerror("Lỗi", str(e))
+            return
 
         if len(statuses) == 0:
             ttk.Label(self.budget_container,
