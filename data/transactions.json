@@ -1,22 +1,953 @@
+
 [
   {
     "id": 1,
     "user_id": 1,
-    "category_id": 1,
-    "amount": 120000.0,
-    "type": "expense",
+    "category_id": 12,
+    "amount": 25624000.0,
+    "type": "income",
     "note": "",
-    "date": "2026-06-22",
-    "created_at": "2026-06-22 09:37:08"
+    "date": "2026-03-01",
+    "created_at": "2026-03-01 20:30:16"
   },
   {
     "id": 2,
     "user_id": 1,
+    "category_id": 15,
+    "amount": 2697000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-01-29",
+    "created_at": "2026-01-29 02:44:21"
+  },
+  {
+    "id": 3,
+    "user_id": 1,
+    "category_id": 6,
+    "amount": 476000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-06-18",
+    "created_at": "2026-06-18 20:07:34"
+  },
+  {
+    "id": 4,
+    "user_id": 1,
+    "category_id": 8,
+    "amount": 1681000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-04-18",
+    "created_at": "2026-04-18 20:41:09"
+  },
+  {
+    "id": 5,
+    "user_id": 1,
+    "category_id": 8,
+    "amount": 958000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-18",
+    "created_at": "2026-05-18 19:42:07"
+  },
+  {
+    "id": 6,
+    "user_id": 1,
+    "category_id": 5,
+    "amount": 484000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-24",
+    "created_at": "2026-05-24 16:51:30"
+  },
+  {
+    "id": 7,
+    "user_id": 1,
+    "category_id": 3,
+    "amount": 353000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-02-14",
+    "created_at": "2026-02-14 16:11:39"
+  },
+  {
+    "id": 8,
+    "user_id": 1,
+    "category_id": 13,
+    "amount": 1493000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-06-20",
+    "created_at": "2026-06-20 02:40:48"
+  },
+  {
+    "id": 9,
+    "user_id": 1,
+    "category_id": 10,
+    "amount": 269000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-30",
+    "created_at": "2026-01-30 20:13:58"
+  },
+  {
+    "id": 10,
+    "user_id": 1,
+    "category_id": 11,
+    "amount": 2671000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-27",
+    "created_at": "2026-05-27 18:03:03"
+  },
+  {
+    "id": 11,
+    "user_id": 1,
+    "category_id": 15,
+    "amount": 4905000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-04-18",
+    "created_at": "2026-04-18 01:21:52"
+  },
+  {
+    "id": 12,
+    "user_id": 1,
+    "category_id": 14,
+    "amount": 7678000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-03-31",
+    "created_at": "2026-03-31 06:21:49"
+  },
+  {
+    "id": 13,
+    "user_id": 1,
+    "category_id": 8,
+    "amount": 1079000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-03-12",
+    "created_at": "2026-03-12 21:52:13"
+  },
+  {
+    "id": 14,
+    "user_id": 1,
+    "category_id": 9,
+    "amount": 137000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-14",
+    "created_at": "2026-01-14 02:26:24"
+  },
+  {
+    "id": 15,
+    "user_id": 1,
+    "category_id": 2,
+    "amount": 54000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-03-23",
+    "created_at": "2026-03-23 20:53:57"
+  },
+  {
+    "id": 16,
+    "user_id": 1,
+    "category_id": 5,
+    "amount": 1022000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-06-15",
+    "created_at": "2026-06-15 01:04:13"
+  },
+  {
+    "id": 17,
+    "user_id": 1,
+    "category_id": 15,
+    "amount": 839000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-01-09",
+    "created_at": "2026-01-09 23:25:01"
+  },
+  {
+    "id": 18,
+    "user_id": 1,
+    "category_id": 4,
+    "amount": 1289000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-29",
+    "created_at": "2026-01-29 07:12:47"
+  },
+  {
+    "id": 19,
+    "user_id": 1,
+    "category_id": 16,
+    "amount": 13959000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-04-18",
+    "created_at": "2026-04-18 10:18:41"
+  },
+  {
+    "id": 20,
+    "user_id": 1,
+    "category_id": 4,
+    "amount": 1108000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-06-03",
+    "created_at": "2026-06-03 23:41:40"
+  },
+  {
+    "id": 21,
+    "user_id": 1,
+    "category_id": 14,
+    "amount": 1421000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-03-12",
+    "created_at": "2026-03-12 13:06:55"
+  },
+  {
+    "id": 22,
+    "user_id": 1,
+    "category_id": 6,
+    "amount": 546000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-30",
+    "created_at": "2026-01-30 02:40:08"
+  },
+  {
+    "id": 23,
+    "user_id": 1,
+    "category_id": 9,
+    "amount": 476000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-02-15",
+    "created_at": "2026-02-15 01:21:55"
+  },
+  {
+    "id": 24,
+    "user_id": 1,
+    "category_id": 10,
+    "amount": 255000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-02-13",
+    "created_at": "2026-02-13 14:14:18"
+  },
+  {
+    "id": 25,
+    "user_id": 1,
+    "category_id": 15,
+    "amount": 4496000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-05-18",
+    "created_at": "2026-05-18 10:33:02"
+  },
+  {
+    "id": 26,
+    "user_id": 1,
+    "category_id": 5,
+    "amount": 1475000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-06-15",
+    "created_at": "2026-06-15 17:15:39"
+  },
+  {
+    "id": 27,
+    "user_id": 1,
+    "category_id": 1,
+    "amount": 344000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-31",
+    "created_at": "2026-01-31 16:34:25"
+  },
+  {
+    "id": 28,
+    "user_id": 1,
+    "category_id": 15,
+    "amount": 3612000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-03-12",
+    "created_at": "2026-03-12 04:36:13"
+  },
+  {
+    "id": 29,
+    "user_id": 1,
+    "category_id": 13,
+    "amount": 1391000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-06-13",
+    "created_at": "2026-06-13 18:24:24"
+  },
+  {
+    "id": 30,
+    "user_id": 1,
+    "category_id": 3,
+    "amount": 465000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-04-18",
+    "created_at": "2026-04-18 13:56:07"
+  },
+  {
+    "id": 31,
+    "user_id": 1,
+    "category_id": 5,
+    "amount": 1052000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-11",
+    "created_at": "2026-01-11 11:21:40"
+  },
+  {
+    "id": 32,
+    "user_id": 1,
+    "category_id": 13,
+    "amount": 1419000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-05-02",
+    "created_at": "2026-05-02 21:05:07"
+  },
+  {
+    "id": 33,
+    "user_id": 1,
+    "category_id": 10,
+    "amount": 130000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-06-16",
+    "created_at": "2026-06-16 11:51:00"
+  },
+  {
+    "id": 34,
+    "user_id": 1,
+    "category_id": 7,
+    "amount": 2697000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-03-31",
+    "created_at": "2026-03-31 03:07:37"
+  },
+  {
+    "id": 35,
+    "user_id": 1,
+    "category_id": 2,
+    "amount": 194000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-02-14",
+    "created_at": "2026-02-14 06:17:09"
+  },
+  {
+    "id": 36,
+    "user_id": 1,
+    "category_id": 11,
+    "amount": 4774000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-08",
+    "created_at": "2026-01-08 07:15:33"
+  },
+  {
+    "id": 37,
+    "user_id": 1,
+    "category_id": 4,
+    "amount": 1121000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-01",
+    "created_at": "2026-05-01 23:25:10"
+  },
+  {
+    "id": 38,
+    "user_id": 1,
+    "category_id": 2,
+    "amount": 164000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-24",
+    "created_at": "2026-05-24 16:51:06"
+  },
+  {
+    "id": 39,
+    "user_id": 1,
+    "category_id": 14,
+    "amount": 7659000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-02-28",
+    "created_at": "2026-02-28 07:44:48"
+  },
+  {
+    "id": 40,
+    "user_id": 1,
+    "category_id": 1,
+    "amount": 286000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-04-06",
+    "created_at": "2026-04-06 00:09:59"
+  },
+  {
+    "id": 41,
+    "user_id": 1,
     "category_id": 12,
-    "amount": 5000000.0,
+    "amount": 16487000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-06-15",
+    "created_at": "2026-06-15 15:44:03"
+  },
+  {
+    "id": 42,
+    "user_id": 1,
+    "category_id": 1,
+    "amount": 168000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-03-31",
+    "created_at": "2026-03-31 03:07:37"
+  },
+  {
+    "id": 43,
+    "user_id": 1,
+    "category_id": 6,
+    "amount": 424000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-03-31",
+    "created_at": "2026-03-31 16:03:04"
+  },
+  {
+    "id": 44,
+    "user_id": 1,
+    "category_id": 4,
+    "amount": 969000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-02",
+    "created_at": "2026-05-02 01:21:38"
+  },
+  {
+    "id": 45,
+    "user_id": 1,
+    "category_id": 3,
+    "amount": 424000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-04-18",
+    "created_at": "2026-04-18 19:28:44"
+  },
+  {
+    "id": 46,
+    "user_id": 1,
+    "category_id": 9,
+    "amount": 348000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-30",
+    "created_at": "2026-01-30 08:31:02"
+  },
+  {
+    "id": 47,
+    "user_id": 1,
+    "category_id": 3,
+    "amount": 1308000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-02-14",
+    "created_at": "2026-02-14 20:30:26"
+  },
+  {
+    "id": 48,
+    "user_id": 1,
+    "category_id": 16,
+    "amount": 11333000.0,
     "type": "income",
     "note": "",
     "date": "2026-06-22",
     "created_at": "2026-06-22 09:39:21"
+  },
+  {
+    "id": 49,
+    "user_id": 1,
+    "category_id": 3,
+    "amount": 1485000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-04-06",
+    "created_at": "2026-04-06 20:19:16"
+  },
+  {
+    "id": 50,
+    "user_id": 1,
+    "category_id": 11,
+    "amount": 7687000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-04-06",
+    "created_at": "2026-04-06 14:14:12"
+  },
+  {
+    "id": 51,
+    "user_id": 1,
+    "category_id": 10,
+    "amount": 63000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-02-13",
+    "created_at": "2026-02-13 14:14:18"
+  },
+  {
+    "id": 52,
+    "user_id": 1,
+    "category_id": 14,
+    "amount": 1400000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-06-15",
+    "created_at": "2026-06-15 01:21:49"
+  },
+  {
+    "id": 53,
+    "user_id": 1,
+    "category_id": 5,
+    "amount": 154000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-24",
+    "created_at": "2026-05-24 16:51:30"
+  },
+  {
+    "id": 54,
+    "user_id": 1,
+    "category_id": 6,
+    "amount": 182000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-03-12",
+    "created_at": "2026-03-12 11:21:50"
+  },
+  {
+    "id": 55,
+    "user_id": 1,
+    "category_id": 8,
+    "amount": 427000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-24",
+    "created_at": "2026-05-24 16:51:30"
+  },
+  {
+    "id": 56,
+    "user_id": 1,
+    "category_id": 3,
+    "amount": 1475000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-24",
+    "created_at": "2026-05-24 07:37:11"
+  },
+  {
+    "id": 57,
+    "user_id": 1,
+    "category_id": 2,
+    "amount": 54000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-08",
+    "created_at": "2026-01-08 07:15:33"
+  },
+  {
+    "id": 58,
+    "user_id": 1,
+    "category_id": 12,
+    "amount": 25624000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-01-30",
+    "created_at": "2026-01-30 08:31:02"
+  },
+  {
+    "id": 59,
+    "user_id": 1,
+    "category_id": 1,
+    "amount": 168000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-02-14",
+    "created_at": "2026-02-14 20:30:26"
+  },
+  {
+    "id": 60,
+    "user_id": 1,
+    "category_id": 15,
+    "amount": 4905000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-02-13",
+    "created_at": "2026-02-13 14:14:18"
+  },
+  {
+    "id": 61,
+    "user_id": 1,
+    "category_id": 8,
+    "amount": 958000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-04-06",
+    "created_at": "2026-04-06 20:19:16"
+  },
+  {
+    "id": 62,
+    "user_id": 1,
+    "category_id": 16,
+    "amount": 13959000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-05-18",
+    "created_at": "2026-05-18 19:42:07"
+  },
+  {
+    "id": 63,
+    "user_id": 1,
+    "category_id": 10,
+    "amount": 269000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-29",
+    "created_at": "2026-01-29 07:12:47"
+  },
+  {
+    "id": 64,
+    "user_id": 1,
+    "category_id": 2,
+    "amount": 194000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-02-28",
+    "created_at": "2026-02-28 07:44:48"
+  },
+  {
+    "id": 65,
+    "user_id": 1,
+    "category_id": 9,
+    "amount": 476000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-04-06",
+    "created_at": "2026-04-06 14:14:12"
+  },
+  {
+    "id": 66,
+    "user_id": 1,
+    "category_id": 6,
+    "amount": 476000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-04-18",
+    "created_at": "2026-04-18 19:28:44"
+  },
+  {
+    "id": 67,
+    "user_id": 1,
+    "category_id": 7,
+    "amount": 2697000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-30",
+    "created_at": "2026-01-30 20:13:58"
+  },
+  {
+    "id": 68,
+    "user_id": 1,
+    "category_id": 11,
+    "amount": 4774000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-27",
+    "created_at": "2026-05-27 18:03:03"
+  },
+  {
+    "id": 69,
+    "user_id": 1,
+    "category_id": 1,
+    "amount": 286000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-14",
+    "created_at": "2026-01-14 02:26:24"
+  },
+  {
+    "id": 70,
+    "user_id": 1,
+    "category_id": 4,
+    "amount": 1121000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-03-23",
+    "created_at": "2026-03-23 20:53:57"
+  },
+  {
+    "id": 71,
+    "user_id": 1,
+    "category_id": 3,
+    "amount": 465000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-04-18",
+    "created_at": "2026-04-18 20:41:09"
+  },
+  {
+    "id": 72,
+    "user_id": 1,
+    "category_id": 10,
+    "amount": 130000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-03-31",
+    "created_at": "2026-03-31 06:21:49"
+  },
+  {
+    "id": 73,
+    "user_id": 1,
+    "category_id": 13,
+    "amount": 1419000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-01-31",
+    "created_at": "2026-01-31 16:34:25"
+  },
+  {
+    "id": 74,
+    "user_id": 1,
+    "category_id": 15,
+    "amount": 2697000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-04-18",
+    "created_at": "2026-04-18 01:21:52"
+  },
+  {
+    "id": 75,
+    "user_id": 1,
+    "category_id": 14,
+    "amount": 7678000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-03-12",
+    "created_at": "2026-03-12 04:36:13"
+  },
+  {
+    "id": 76,
+    "user_id": 1,
+    "category_id": 1,
+    "amount": 344000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-06-15",
+    "created_at": "2026-06-15 15:44:03"
+  },
+  {
+    "id": 77,
+    "user_id": 1,
+    "category_id": 2,
+    "amount": 164000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-03-31",
+    "created_at": "2026-03-31 16:03:04"
+  },
+  {
+    "id": 78,
+    "user_id": 1,
+    "category_id": 5,
+    "amount": 1052000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-11",
+    "created_at": "2026-01-11 11:21:40"
+  },
+  {
+    "id": 79,
+    "user_id": 1,
+    "category_id": 14,
+    "amount": 7659000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-05-02",
+    "created_at": "2026-05-02 21:05:07"
+  },
+  {
+    "id": 80,
+    "user_id": 1,
+    "category_id": 12,
+    "amount": 16487000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-06-15",
+    "created_at": "2026-06-15 17:15:39"
+  },
+  {
+    "id": 81,
+    "user_id": 1,
+    "category_id": 9,
+    "amount": 137000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-02",
+    "created_at": "2026-05-02 01:21:38"
+  },
+  {
+    "id": 82,
+    "user_id": 1,
+    "category_id": 5,
+    "amount": 1022000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-02-14",
+    "created_at": "2026-02-14 16:11:39"
+  },
+  {
+    "id": 83,
+    "user_id": 1,
+    "category_id": 4,
+    "amount": 969000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-06-18",
+    "created_at": "2026-06-18 20:07:34"
+  },
+  {
+    "id": 84,
+    "user_id": 1,
+    "category_id": 11,
+    "amount": 2671000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-24",
+    "created_at": "2026-05-24 16:51:06"
+  },
+  {
+    "id": 85,
+    "user_id": 1,
+    "category_id": 6,
+    "amount": 424000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-04-06",
+    "created_at": "2026-04-06 00:09:59"
+  },
+  {
+    "id": 86,
+    "user_id": 1,
+    "category_id": 15,
+    "amount": 839000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-03-01",
+    "created_at": "2026-03-01 20:30:16"
+  },
+  {
+    "id": 87,
+    "user_id": 1,
+    "category_id": 8,
+    "amount": 1681000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-18",
+    "created_at": "2026-05-18 10:33:02"
+  },
+  {
+    "id": 88,
+    "user_id": 1,
+    "category_id": 5,
+    "amount": 484000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-01-29",
+    "created_at": "2026-01-29 02:44:21"
+  },
+  {
+    "id": 89,
+    "user_id": 1,
+    "category_id": 4,
+    "amount": 1289000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-05-01",
+    "created_at": "2026-05-01 23:25:10"
+  },
+  {
+    "id": 90,
+    "user_id": 1,
+    "category_id": 3,
+    "amount": 353000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-06-20",
+    "created_at": "2026-06-20 02:40:48"
+  },
+  {
+    "id": 91,
+    "user_id": 1,
+    "category_id": 4,
+    "amount": 1108000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-02-14",
+    "created_at": "2026-02-14 06:17:09"
+  },
+  {
+    "id": 92,
+    "user_id": 1,
+    "category_id": 13,
+    "amount": 1493000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-03-12",
+    "created_at": "2026-03-12 13:06:55"
+  },
+  {
+    "id": 93,
+    "user_id": 1,
+    "category_id": 14,
+    "amount": 1421000.0,
+    "type": "income",
+    "note": "",
+    "date": "2026-01-30",
+    "created_at": "2026-01-30 02:40:08"
+  },
+  {
+    "id": 94,
+    "user_id": 1,
+    "category_id": 6,
+    "amount": 546000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-02-15",
+    "created_at": "2026-02-15 01:21:55"
+  },
+  {
+    "id": 95,
+    "user_id": 1,
+    "category_id": 9,
+    "amount": 348000.0,
+    "type": "expense",
+    "note": "",
+    "date": "2026-06-15",
+    "created_at": "2026-06-15 01:04:13"
   }
 ]

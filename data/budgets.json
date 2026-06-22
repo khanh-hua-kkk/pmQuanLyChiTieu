@@ -1,10 +1,91 @@
+
 [
   {
     "id": 1,
     "user_id": 1,
     "category_id": 1,
-    "limit_amount": 100000.0,
+    "limit_amount": 3000000.0,
     "month": "2026-06",
-    "created_at": "2026-06-22 09:15:11"
+    "created_at": "2026-06-22 12:30:47"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "category_id": 2,
+    "limit_amount": 500000.0,
+    "month": "2026-06",
+    "created_at": "2026-06-22 12:30:47"
+  },
+  {
+    "id": 3,
+    "user_id": 1,
+    "category_id": 3,
+    "limit_amount": 500000.0,
+    "month": "2026-06",
+    "created_at": "2026-06-22 12:30:47"
+  },
+  {
+    "id": 4,
+    "user_id": 1,
+    "category_id": 4,
+    "limit_amount": 300000.0,
+    "month": "2026-06",
+    "created_at": "2026-06-22 12:30:47"
+  },
+  {
+    "id": 5,
+    "user_id": 1,
+    "category_id": 5,
+    "limit_amount": 800000.0,
+    "month": "2026-06",
+    "created_at": "2026-06-22 12:30:47"
+  },
+  {
+    "id": 6,
+    "user_id": 1,
+    "category_id": 6,
+    "limit_amount": 200000.0,
+    "month": "2026-06",
+    "created_at": "2026-06-22 12:30:47"
+  },
+  {
+    "id": 7,
+    "user_id": 1,
+    "category_id": 7,
+    "limit_amount": 1500000.0,
+    "month": "2026-06",
+    "created_at": "2026-06-22 12:30:47"
+  },
+  {
+    "id": 8,
+    "user_id": 1,
+    "category_id": 8,
+    "limit_amount": 400000.0,
+    "month": "2026-06",
+    "created_at": "2026-06-22 12:30:47"
+  },
+  {
+    "id": 9,
+    "user_id": 1,
+    "category_id": 9,
+    "limit_amount": 800000.0,
+    "month": "2026-06",
+    "created_at": "2026-06-22 12:30:47"
+  },
+  {
+    "id": 10,
+    "user_id": 1,
+    "category_id": 10,
+    "limit_amount": 150000.0,
+    "month": "2026-06",
+    "created_at": "2026-06-22 12:30:47"
+  },
+  {
+    "id": 11,
+    "user_id": 1,
+    "category_id": 11,
+    "limit_amount": 2500000.0,
+    "month": "2026-06",
+    "created_at": "2026-06-22 12:30:47"
   }
 ]

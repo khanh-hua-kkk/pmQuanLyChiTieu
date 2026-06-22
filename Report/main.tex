@@ -1,4 +1,4 @@
-\documentclass[12pt, letterpaper]{article}
+\documentclass[12pt,letterpaper]{article}
 % --- KHAI BÁO THƯ VIỆN ---
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -959,6 +959,440 @@ Kiểm thử là quá trình kiểm tra hay đánh giá một hệ thống hay m
 Quá trình kiểm thử được tiến hành nhằm đảm bảo phần mềm vận hành đúng theo các yêu cầu và kỳ vọng đã đề ra từ đầu. Mục tiêu chính của kiểm thử là phát hiện sớm và xử lý kịp thời các lỗi về logic và chức năng, từ đó nâng cao độ tin cậy và tính ổn định của phần mềm trong quá trình xử lý dữ liệu. Đồng thời, kiểm thử cũng nhằm đánh giá hiệu năng tổng thể của phần mềm, bao gồm khả năng xử lý nhanh chóng và hiệu quả các thao tác, cũng như mức độ thân thiện và dễ sử dụng của giao diện người dùng. Qua đó, đảm bảo hệ thống không chỉ đáp ứng yêu cầu kỹ thuật mà còn mang lại trải nghiệm tốt cho người sử dụng cuối cùng.
 
 \subsubsection{Phương pháp kiểm thử} Những test case được trình bày bên dưới được áp dụng phương pháp kiểm thử hộp đen (Black-box testing) và kiểm thử hộp trắng (White-box testing) ở các khía cạnh khác nhau. Ngoài ra, chiến lược hồi quy và chiến lược kiểm thử hệ thống cũng được chúng em áp dụng trong quá trình kiểm thử. Cụ thể, sau mỗi lần sửa lỗi và cải tiến chương trình, em phải kiểm thử lại bằng cách chạy các test case của các chức năng cũ để đảm bảo việc thêm mới không gây ra xung đột giữa các luồng thực hiện chức năng, điều có thể làm hỏng chương trình. Trong quá trình đó, toàn bộ chương trình được kiểm tra như một hệ thống hoàn chỉnh.
+\subsection{Các trường hợp kiểm thử}
+\subsubsection{Chức năng 1: Đăng ký và đăng nhập vào hệ thống}
+
+Khi chạy hàm \texttt{main.py}, giao diện đăng ký/đăng nhập tài khoản xuất hiện. Để thực hiện đăng ký/đăng nhập tài khoản, người dùng lựa chọn nút với chức năng tương ứng.
+\begin{itemize}
+    \item Đăng ký tài khoản
+\renewcommand{\arraystretch}{1.5}
+\begin{xltabular}{\textwidth}{|c|p{3.5cm}|X|p{3.5cm}|}
+    \hline
+    \centering\textbf{Mã} & \centering\textbf{Mô tả} & \centering\textbf{Input} & \centering\arraybackslash\textbf{Output mong muốn} \\
+    \hline
+    \endfirsthead
+    \hline
+    \centering\textbf{Mã} & \centering\textbf{Mô tả} & \centering\textbf{Input} & \centering\arraybackslash\textbf{Output mong muốn} \\
+    \hline
+    \endhead
+    \endfoot
+    \hline
+    \caption{Bảng kiểm thử chức năng Đăng ký }
+    \label{tab:testcase_auth}
+    \endlastfoot
+    
+    TC-001 & Để trống họ tên & \texttt{name="", email="testuser@gmail.com", pw="123123", pw2="123123"} & Hiện thông báo "Vui lòng điền đầy đủ" \\
+    \hline
+    TC-002 & Email sai định dạng & \texttt{name="testuser", email="testusergmail.com", pw="123123", pw2="123123"} & Hiện thông báo "Email không hợp lệ" \\
+    \hline
+    TC-003 & Mật khẩu không khớp & \texttt{name="testuser", email="testuser@gmail.com", pw="123123", pw2="321321"} & Hiện thông báo "Mật khẩu xác nhận không khớp" \\
+    \hline
+    TC-004 & Đăng ký thành công & \texttt{name="testuser", email="testuser@gmail.com", pw="123123", pw2="123123"} & Tài khoản được tạo, chuyển sang màn hình đăng nhập \\
+    \hline
+    TC-005 & Email đã tồn tại & \texttt{name="abc", email} đã được sử dụng trong hệ thống \texttt{, pw="123123", pw2="123123"} & Hiện thông báo "Email đã được sử dụng" \\
+\end{xltabular}
+
+%Hình ảnh kết quả kiểm thử ĐĂNG KÝ
+\renewcommand{\arraystretch}{1.5}
+\begin{xltabular}{\textwidth}{X X}
+    % ================= HÀNG 1 =================
+    % --- Ô BÊN TRÁI ---
+    \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{IN_TC01.png}
+        \par\vspace{0.1cm} 
+        
+        \includegraphics[width=0.9\linewidth]{OUT_TC01.png}
+        \par\vspace{0.2cm}
+        
+        \small\textbf{TC-001} 
+        \vspace{0.3cm}
+    \end{minipage}
+    & 
+    % --- Ô BÊN PHẢI ---
+    \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{IN_TC02.png}
+        \par\vspace{0.1cm} 
+        
+        \includegraphics[width=0.9\linewidth]{OUT_TC02.png}
+        \par\vspace{0.2cm}
+        
+        \small\textbf{TC-002} 
+        \vspace{0.3cm}
+    \end{minipage} \\
+    
+    \multicolumn{2}{c}{\vspace{0.5cm}} \\
+
+    % ================= HÀNG 2 =================
+    % --- Ô BÊN TRÁI ---
+    \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{IN_TC03.png}
+        \par\vspace{0.1cm}
+        
+        \includegraphics[width=0.9\linewidth]{OUT_TC03.png}
+        \par\vspace{0.2cm}
+        \small\textbf{TC-003}
+        \vspace{0.3cm}
+    \end{minipage} 
+    & 
+    % --- Ô BÊN PHẢI ---
+    \begin{minipage}{\linewidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{IN_TC04.png}
+        \par\vspace{0.1cm}
+        
+        \includegraphics[width=0.9\linewidth]{OUT_TC04a.png}
+        \par\vspace{0.2cm}
+        \small\textbf{TC-004a} 
+        \vspace{0.3cm}
+    \end{minipage} \\
+
+    % ================= HÀNG 3 (GỘP CỘT) =================
+    \multicolumn{2}{c}{
+        \begin{minipage}{\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{OUT_TC04b.png}
+            \par\vspace{0.2cm}
+            
+            \small\textbf{TC-004b} 
+            \vspace{0.3cm}
+        \end{minipage}
+    } \\
+
+    % ================= HÀNG 4 (GỘP CỘT - 2 ẢNH XẾP DỌC) =================
+    \multicolumn{2}{c}{
+        \begin{minipage}{0.5\textwidth}
+            \centering
+            \includegraphics[width=0.85\textwidth]{IN_TC05.png}
+            \par\vspace{0.2cm} 
+            
+            \includegraphics[width=0.85\textwidth]{OUT_TC05.png}
+            \par\vspace{0.3cm} 
+            
+            \small\textbf{TC-005}
+            \vspace{0.3cm}
+        \end{minipage}
+    } 
+\end{xltabular}
+\item \textbf{Đăng nhập tài khoản}
+\renewcommand{\arraystretch}{1.5}
+\begin{xltabular}{\textwidth}{|c|p{3.5cm}|X|p{3.5cm}|}
+    \hline
+    \centering\textbf{Mã} & \centering\textbf{Mô tả} & \centering\textbf{Input} & \centering\arraybackslash\textbf{Output mong muốn} \\
+    \hline
+    \endfirsthead
+    \hline
+    \centering\textbf{Mã} & \centering\textbf{Mô tả} & \centering\textbf{Input} & \centering\arraybackslash\textbf{Output mong muốn} \\
+    \hline
+    \endhead
+    \endfoot
+    \hline
+    \caption{Bảng kiểm thử chức năng Đăng nhập }
+    \label{tab:testcase_auth}
+    \endlastfoot
+    
+    TC-006 & Email không tồn tại & \texttt{email="test@gmail.com", pw="123123"} & Hiện thông báo "Email hoặc mật khẩu sai" \\
+    \hline
+    TC-007 & Mật khẩu sai & \texttt{email="testusergmail.com", pw="321"} & Hiện thông báo "Email hoặc mật khẩu sai" \\
+    \hline
+    TC-008 & Đăng nhập thành công & \texttt{email="testuser@gmail.com", pw="123123"} & Tài khoản đăng nhập được, chuyển sang giao diện chính\\
+\end{xltabular}
+
+%Hình ảnh kết quả kiểm thử ĐĂNG NHẬP
+\renewcommand{\arraystretch}{1.5}
+\begin{xltabular}{\textwidth}{X X}
+    % ================= HÀNG 1 =================
+    \multicolumn{2}{c}{
+        \begin{minipage}{\textwidth}
+            \centering
+            \includegraphics[width=0.85\textwidth]{IN_TC06.png}
+            \par\vspace{0.2cm} 
+            
+            \includegraphics[width=0.6\textwidth]{OUT_TC06.png}
+            \par\vspace{0.3cm} 
+            
+            \small\textbf{TC-006}
+            \vspace{0.3cm}
+        \end{minipage}
+    }\\
+        % ================= HÀNG 2 =================
+    \multicolumn{2}{c}{
+        \begin{minipage}{\textwidth}
+            \centering
+            \includegraphics[width=0.85\textwidth]{IN_TC07.png}
+            \par\vspace{0.2cm} 
+            
+            \includegraphics[width=0.6\textwidth]{OUT_TC07.png}
+            \par\vspace{0.3cm} 
+            
+            \small\textbf{TC-007}
+            \vspace{0.3cm}
+        \end{minipage}
+    }\\
+    % ================= HÀNG 3 =================
+    \multicolumn{2}{c}{
+        \begin{minipage}{\textwidth}
+            \centering
+            \includegraphics[width=0.85\textwidth]{IN_TC08.png}
+            \par\vspace{0.2cm} 
+            
+            \includegraphics[width=0.85\textwidth]{OUT_TC08.png}
+            \par\vspace{0.3cm} 
+            
+            \small\textbf{TC-008}
+            \vspace{0.3cm}
+        \end{minipage}
+    } 
+\end{xltabular}
+
+\end{itemize}
+\subsubsection{Chức năng 2: Thiết lập ngân sách}
+
+Sau khi đã đăng nhập vào tài khoản, người dùng lựa chọn tab \texttt{Ngân sách} trên thanh công cụ bên trái giao diện để thực hiện các chức năng tạo lập/chỉnh sửa ngân sách cho từng loại danh mục.
+
+\begin{xltabular}{\textwidth}{|c|p{3.5cm}|X|p{3.5cm}|}
+    \hline
+    \centering\textbf{Mã} & \centering\textbf{Mô tả} & \centering\textbf{Input} & \centering\arraybackslash\textbf{Output mong muốn} \\
+    \hline
+    \endfirsthead
+    \hline
+    \centering\textbf{Mã} & \centering\textbf{Mô tả} & \centering\textbf{Input} & \centering\arraybackslash\textbf{Output mong muốn} \\
+    \hline
+    \endhead
+    \endfoot
+    \hline
+    \caption{Bảng kiểm thử chức năng Thiết lập ngân sách}
+    \label{tab:testcase_auth}
+    \endlastfoot
+    TC-009& Số tiền sai định dạng & \texttt{month="2026-06", category= Ăn uống, limit\_amount= "abc"} & Hiện thông báo số tiền không hợp lệ \\
+    \hline
+    TC-010 & Thời gian sai định dạng & \texttt{month="2026-16", category= Ăn uống, limit\_amount= "123000"} & Hiện thông báo lỗi về tháng \\
+    \hline
+    TC-011 & Thiết lập ngân sách thành công & \texttt{month="2026-06", category= Ăn uống, limit\_amount= "123000"} & Hiện thông báo thiết lập thành công \\
+    \hline
+    TC-012 & Chỉnh sửa ngân sách cho một danh mục đã có ngân sách trước đó & \texttt{month="2026-06", category= Ăn uống, limit\_amount= "100000"} & Hiện thông báo thiết lập thành công \\
+    \hline
+\end{xltabular}
+
+% Hình ảnh kết quả kiểm thử NGÂN SÁCH
+\begin{center}
+    % ================= TC-009 =================
+    \includegraphics[width=0.85\textwidth]{IN_TC09.png}
+    \par\vspace{0.2cm} 
+    
+    \includegraphics[width=0.6\textwidth]{OUT_TC09.png}
+    \par\vspace{0.3cm} 
+    
+    \small\textbf{TC-009}
+    \par\vspace{0.8cm} % Khoảng cách giữa các TC
+
+    % ================= TC-010 =================
+    \includegraphics[width=0.85\textwidth]{IN_TC10.png}
+    \par\vspace{0.2cm} 
+    
+    \includegraphics[width=0.6\textwidth]{OUT_TC10.png}
+    \par\vspace{0.3cm} 
+    
+    \small\textbf{TC-010}
+    \par\vspace{0.8cm}
+
+    % ================= TC-011 =================
+    \includegraphics[width=0.85\textwidth]{IN_TC11.png}
+    \par\vspace{0.2cm} 
+    
+    \includegraphics[width=0.5\textwidth]{OUT_TC11a.png}
+    \par\vspace{0.3cm} 
+
+    \includegraphics[width=\textwidth]{OUT_TC11b.png}
+    \par\vspace{0.3cm} 
+
+    \small\textbf{TC-011}
+    \par\vspace{0.8cm}
+
+    % ================= TC-012 =================
+    \includegraphics[width=0.85\textwidth]{IN_TC12.png}
+    \par\vspace{0.2cm} 
+    
+    \includegraphics[width=0.5\textwidth]{OUT_TC12a.png}
+    \par\vspace{0.3cm} 
+
+    \includegraphics[width=\textwidth]{OUT_TC12b.png}
+    \par\vspace{0.3cm} 
+
+    \small\textbf{TC-012}
+    \vspace{0.3cm}
+\end{center}\subsubsection{Chức năng 3: Ghi chép giao dịch}
+Sau khi đăng nhập vào tài khoản, tại tab Dashboard người dùng có thể lựa chọn nút chức năng thêm giao dịch hoặc lựa chọn tab Thêm giao dịch để thực hiện chức năng này. Với ngân sách của danh mục Ăn uống đã được thiết lập ở trên, thực hiện các test case như bên dưới.
+\begin{itemize}
+    \item Thêm giao dịch
+    \begin{xltabular}{\textwidth}{|c|p{3.5cm}|X|p{3.5cm}|}
+    \hline
+    \centering\textbf{Mã} & \centering\textbf{Mô tả} & \centering\textbf{Input} & \centering\arraybackslash\textbf{Output mong muốn} \\
+    \hline
+    \endfirsthead
+    \hline
+    \centering\textbf{Mã} & \centering\textbf{Mô tả} & \centering\textbf{Input} & \centering\arraybackslash\textbf{Output mong muốn} \\
+    \hline
+    \endhead
+    \endfoot
+    \hline
+    \caption{Bảng kiểm thử chức năng Thêm giao dịch}
+    \label{tab:testcase_auth}
+    \endlastfoot
+    TC-013& Số tiền sai định dạng & \texttt{type= Chi tiêu, category= Ăn uống, amount= "abc", date="2026-06-22", note=""} & Hiện thông báo số tiền không hợp lệ \\
+    \hline
+    TC-014 & Thời gian sai định dạng & \texttt{type= Chi tiêu, category= Ăn uống, amount= "120000", date="2026-06-35", note=""} & Hiện thông báo lỗi về thời gian \\
+    \hline
+    TC-015 & Nhập vào một chi tiêu vượt ngân sách & \texttt{type= Chi tiêu, category= Ăn uống, amount= "120000", date="2026-06-22", note=""} & Hiện cảnh báo vượt ngân sách và thông báo thiết lập thành công \\
+    \hline
+    TC-016& Nhâp vào một khoản thu nhập & \texttt{type= Thu nhập, category= Tiền lương, amount= "5000000", date="2026-06-22", note=""} & Hiện thông nhập vào thành công \\
+    \hline
+\end{xltabular}
+
+%Hình ảnh kết quả kiểm thử Thêm giao dịch
+\renewcommand{\arraystretch}{1.5}
+\begin{xltabular}{\textwidth}{X X}
+    % ================= HÀNG 1 =================
+    \multicolumn{2}{c}{
+        \begin{minipage}{\textwidth}
+            \centering
+            \includegraphics[width=0.85\textwidth]{IN_TC13.png}
+            \par\vspace{0.2cm} 
+            
+            \includegraphics[width=0.6\textwidth]{OUT_TC13.png}
+            \par\vspace{0.3cm} 
+            
+            \small\textbf{TC-013}
+            \vspace{0.3cm}
+        \end{minipage}
+    }\\
+        % ================= HÀNG 2 =================
+    \multicolumn{2}{c}{
+        \begin{minipage}{\textwidth}
+            \centering
+            \includegraphics[width=0.85\textwidth]{IN_TC14.png}
+            \par\vspace{0.2cm} 
+            
+            \includegraphics[width=0.5\textwidth]{OUT_TC14.png}
+            \par\vspace{0.3cm} 
+            
+            \small\textbf{TC-014}
+            \vspace{0.3cm}
+        \end{minipage}
+    }\\
+    % ================= HÀNG 3 =================
+    \multicolumn{2}{c}{
+        \begin{minipage}{\textwidth}
+            \centering
+            \includegraphics[width=0.85\textwidth]{IN_TC15.png}
+            \par\vspace{0.2cm} 
+            
+            \includegraphics[width=0.6\textwidth]{OUT_TC15a.png}
+            \par\vspace{0.3cm} 
+
+            \includegraphics[width=0.3\textwidth]{OUT_TC15b.png}
+            \par\vspace{0.3cm} 
+
+            \includegraphics[width=\textwidth]{OUT_TC15c.png}
+            \par\vspace{0.3cm} 
+
+            \small\textbf{TC-015}
+            \vspace{0.3cm}
+        \end{minipage}
+    }\\
+        % ================= HÀNG 4 =================
+    \multicolumn{2}{c}{
+        \begin{minipage}{\textwidth}
+            \centering
+            \includegraphics[width=0.85\textwidth]{IN_TC16.png}
+            \par\vspace{0.2cm} 
+            
+            \includegraphics[width=0.45\textwidth]{OUT_TC16a.png}
+            \par\vspace{0.3cm} 
+
+            \includegraphics[width=\textwidth]{OUT_TC16b.png}
+            \par\vspace{0.3cm} 
+
+            \small\textbf{TC-016}
+            \vspace{0.3cm}
+        \end{minipage}
+    } 
+\end{xltabular}
+    \item Xóa giao dịch
+Để thực hiện xóa một giao dịch, người dùng lựa chọn tab \texttt{Lịch sử}, click vào giao dịch muốn xóa và chọn vào nút xóa ở góc phải giao diện.
+\begin{xltabular}{\textwidth}{|c|p{3.5cm}|X|p{3.5cm}|}
+\hline
+\centering\textbf{Mã} & \centering\textbf{Mô tả} & \centering\textbf{Input} & \centering\arraybackslash\textbf{Output mong muốn} \\
+\hline
+TC-017& Xóa một giao dịch & Chọn một giao dịch trong tab lịch sử & Giao dịch được xóa khỏi hệ thống \\
+\hline
+\end{xltabular}
+
+% Hình ảnh kết quả kiểm thử Xóa giao dịch
+\begin{center}
+    \includegraphics[width=0.85\textwidth]{IN_TC17a.png}
+    \par\vspace{0.2cm} 
+
+    \includegraphics[width=0.4\textwidth]{IN_TC17b.png}
+    \par\vspace{0.2cm} 
+
+    \includegraphics[width=0.85\textwidth]{OUT_TC17a.png}
+    \par\vspace{0.3cm} 
+
+    \includegraphics[width=\textwidth]{OUT_TC17b.png}
+    \par\vspace{0.3cm} 
+
+    \small\textbf{TC-017}
+    \vspace{0.3cm}
+\end{center}
+\end{itemize}
+\subsubsection{Chức năng 4: Báo cáo chi tiêu}
+Sau khi đã nhập các giao dịch cũng như ngân sách các danh mục vào hệ thống, người dùng sẽ có thể xem báo cáo thu chi tại tab \texttt{Báo cáo}. Khi test chức năng này, chúng em sử dụng file data test để thiết lập một số lượng giao dịch và ngân sách đủ lớn để có dữ liệu sinh báo cáo.
+    \begin{xltabular}{\textwidth}{|c|p{3.5cm}|X|p{3.5cm}|}
+    \hline
+    \centering\textbf{Mã} & \centering\textbf{Mô tả} & \centering\textbf{Input} & \centering\arraybackslash\textbf{Output mong muốn} \\
+    \hline
+    \endfirsthead
+    \hline
+    \centering\textbf{Mã} & \centering\textbf{Mô tả} & \centering\textbf{Input} & \centering\arraybackslash\textbf{Output mong muốn} \\
+    \hline
+    \endhead
+    \endfoot
+    \hline
+    \caption{Bảng kiểm thử chức năng Báo cáo chi tiêu}
+    \label{tab:testcase_auth}
+    \endlastfoot
+    TC-018& Báo cáo theo tháng & \texttt{period\_type= month} & Hiện báo cáo cho tháng hiện tại \\
+    \hline
+    TC-019 & Báo cáo theo quý & \texttt{period\_type= quarter} & Hiện báo cáo cho quý hiện tại \\
+    \hline
+    TC-020& Báo cáo theo năm & \texttt{period\_type= year} & Hiện báo cáo cho năm hiện tại \\
+    \hline
+    TC-021 & Báo cáo chi tiêu một khoảng thời gian tùy chọn & \texttt{start\_date: "2026-06-01", end\_date: "2026-06-15"} & Báo cáo chi tiêu cho khoảng thời gian đó \\
+    \hline
+    \end{xltabular}
+% Hình ảnh kết quả kiểm thử Báo cáo chi tiêu
+\begin{center}
+    \includegraphics[width=0.85\textwidth]{OUT_TC18.png}
+    \par\vspace{0.2cm} 
+    \small\textbf{TC-018}
+
+    \includegraphics[width=0.85\textwidth]{OUT_TC19.png}
+    \par\vspace{0.2cm} 
+    \small\textbf{TC-019}
+
+    \includegraphics[width=0.85\textwidth]{OUT_TC20.png}
+    \par\vspace{0.3cm} 
+    \small\textbf{TC-020}
+
+    \includegraphics[width=0.85\textwidth]{OUT_TC21.png}
+    \par\vspace{0.3cm} 
+
+    \small\textbf{TC-021}
+    \vspace{0.3cm}
+\end{center}
 
 \newpage
 \section{Các kĩ thuật sử dụng}
