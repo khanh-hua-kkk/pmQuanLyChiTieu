@@ -1,0 +1,169 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mystyle}
+
+% ── Geometry ──────────────────────────────────────────────
+\RequirePackage[
+    a4paper,
+    left=2.5cm, right=2.5cm,
+    top=2.5cm,  bottom=2.5cm
+]{geometry}
+
+% ── Font & Encoding ───────────────────────────────────────
+\RequirePackage[utf8]{vietnam}
+\RequirePackage{microtype}
+
+% ── Màu sắc ───────────────────────────────────────────────
+\RequirePackage{xcolor}
+\definecolor{MainRed}{RGB}{20,70,165}   
+
+% ── TikZ (dùng cho section title và footer) ───────────────
+\RequirePackage{tikz}
+\usetikzlibrary{shapes.symbols, shapes.geometric}
+
+% ── Header / Footer ───────────────────────────────────────
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%% Header trái: tên môn học
+\lhead{\textsf{\textcolor{MainRed}{\textbf{Kỹ thuật lập trình}}}}
+
+%% Header phải: tên chương hiện tại (tự động)
+\rhead{\textcolor{MainRed}{\textbf{\nouppercase{\leftmark}}}}
+
+%% Đường kẻ header màu đỏ
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{%
+    \hbox to\headwidth{\color{MainRed}\leaders\hrule height \headrulewidth\hfill}%
+}
+
+
+%% Footer phải: số trang dạng mũi tên đỏ
+\rfoot{%
+    \makebox[1cm][l]{%
+        \begin{tikzpicture}[baseline]
+            \node[
+                anchor      = base,
+                signal,
+                signal to   = west,
+                fill        = MainRed,
+                font        = \bfseries\sffamily,
+                text        = white,
+                text width  = \evensidemargin+1in+1cm,
+                align       = left
+            ](pg){\thepage};
+            \draw[overlay, MainRed, line width=1pt]
+                (pg.west) --++ (-\textwidth+1cm, 0);
+        \end{tikzpicture}
+    }%
+}
+
+
+% ── Tiêu đề Section / Subsection / Subsubsection ──────────
+\RequirePackage[explicit]{titlesec}
+
+%% Section: hình thoi số + banner mũi tên đỏ (như ảnh)
+\titleformat{\section}[hang]
+    {\bfseries\sffamily}
+    {\filright
+        \begin{tikzpicture}
+            \node[
+                inner xsep   = 2pt,
+                font         = \color{white},
+                minimum height = 1cm,
+                align        = center,
+                diamond,
+                fill         = MainRed,
+                aspect       = 1.5
+            ]{\Large\thesection};
+        \end{tikzpicture}
+    }
+    {-15pt}
+    {%
+        \begin{tikzpicture}
+            \node[
+                inner xsep        = 5pt,
+                align             = left,
+                minimum height    = 1cm,
+                signal,
+                signal from       = west,
+                fill              = MainRed,
+                font              = \color{white},
+                signal pointer angle = 67.38
+            ]{\mbox{\Large\bfseries\raggedright\strut\hspace{3pt}#1}};
+        \end{tikzpicture}
+    }
+
+%% Subsection: chữ đỏ đậm (như ảnh — "1.1 Tổng quan về đề tài")
+\titleformat{\subsection}
+    {\large\bfseries\color{MainRed}}
+    {\thesubsection}{7.5pt}{#1}
+
+%% Subsubsection: chữ đỏ đậm nhỏ hơn
+\titleformat{\subsubsection}
+    {\bfseries\color{MainRed}}
+    {\thesubsubsection}{7.5pt}{#1}
+
+% ── Danh sách (bullet màu đỏ đậm) ────────────────────────
+\RequirePackage{enumitem}
+\setlist{font={\color{MainRed}\bfseries}}
+
+% ── Tcolorbox (dùng cho khối code) ────────────────────────
+\RequirePackage{tcolorbox}
+\tcbuselibrary{listings, skins}
+
+% ── Listings cấu hình cho C++ ─────────────────────────────
+\RequirePackage{listings}
+\lstset{
+    language        = C++,
+    backgroundcolor = \color{gray!10},
+    keywordstyle    = \color{blue!80!black}\bfseries,
+    stringstyle     = \color{orange!80!black},
+    commentstyle    = \color{gray}\itshape,
+    basicstyle      = \ttfamily\small,
+    showstringspaces= false,
+    breaklines      = true,
+    frame           = single,
+    rulecolor       = \color{gray!40},
+    numbers         = left,
+    numberstyle     = \tiny\color{gray},
+    stepnumber      = 1,
+    tabsize         = 4,
+}
+
+% ── Môi trường block (hộp có tiêu đề màu) ─────────────────
+\newenvironment{block}[1]{%
+    \begin{tcolorbox}[
+        colback      = white,
+        colframe     = MainRed,
+        arc          = 3mm,
+        title        = {\textbf{#1}},
+        colbacktitle = MainRed,
+        coltitle     = white,
+        boxrule      = 1.5pt,
+    ]
+}{%
+    \end{tcolorbox}
+}
+
+% ── Các package phụ trợ thường dùng ──────────────────────
+\RequirePackage{amsmath}
+\RequirePackage{float}
+\RequirePackage{graphicx}
+\RequirePackage{caption}
+\RequirePackage{multirow}
+\RequirePackage{array}
+\RequirePackage{booktabs}
+\RequirePackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor  = black,
+    urlcolor   = MainRed,
+    citecolor  = black,
+}
+\RequirePackage{indentfirst}
+\setlength{\parindent}{0.5cm}
+\RequirePackage{dirtree}
+\RequirePackage{chngcntr}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
