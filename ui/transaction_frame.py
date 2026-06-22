@@ -43,7 +43,7 @@ class AddTransactionFrame(ttk.Frame):
         self.amount_var = tk.StringVar()
         ttk.Entry(self, textvariable=self.amount_var).grid(
             row=2, column=1, sticky="ew")
-        ttk.Label(self, text="Ví dụ: 1000000 hoặc 1000000.50 (dấu . hoặc , đều được)",
+        ttk.Label(self, text="Ví dụ: 1000000 hoặc 1000000.50",
                   style="Muted.TLabel").grid(
             row=2, column=1, sticky="e", pady=(24, 0))
 

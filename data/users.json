@@ -1,58 +1,10 @@
 [
   {
     "id": 1,
-    "name": "khanh",
-    "email": "khanh@gmail.com",
-    "password": "3baa216a81c36d8918b49af3005e18d0b330fb2a970a9745ddbdd5c303c675a4",
-    "currency": "VND",
-    "created_at": "2026-05-23 16:32:06"
-  },
-  {
-    "id": 2,
-    "name": "ninh",
-    "email": "ninh123@gmail.com",
-    "password": "3d8355dab4798b8080ef372f3c2a734d186a2f86ee916240d564077344ce17bd",
-    "currency": "VND",
-    "created_at": "2026-05-23 16:36:21"
-  },
-  {
-    "id": 3,
-    "name": "kkk",
-    "email": "kkk@gmail.com",
-    "password": "011f71dabc558fa8006490ffbf85f4e5463531f6596813c8a4029653a1c71125",
-    "currency": "VND",
-    "created_at": "2026-05-23 16:38:19"
-  },
-  {
-    "id": 4,
-    "name": "Test User",
-    "email": "test@example.com",
-    "password": "afb4f8d252ff4a1efcfd55b3ccd11043890061f2a486d77a4359cd83b0427db7",
-    "currency": "VND",
-    "created_at": "2026-05-23 16:39:59"
-  },
-  {
-    "id": 5,
-    "name": "ninh",
-    "email": "ninh15@gmail.com",
-    "password": "51328a0a22089891da0ff97344a26538bd22821a29d51bdd49fd09d3b2d1a21c",
-    "currency": "VND",
-    "created_at": "2026-06-13 09:41:12"
-  },
-  {
-    "id": 6,
-    "name": "ninh",
-    "email": "ninh11@gmail.com",
-    "password": "51328a0a22089891da0ff97344a26538bd22821a29d51bdd49fd09d3b2d1a21c",
-    "currency": "VND",
-    "created_at": "2026-06-13 09:43:14"
-  },
-  {
-    "id": 7,
-    "name": "khanh",
-    "email": "khanh123@gmail.com",
+    "name": "testuser",
+    "email": "testuser@gmail.com",
     "password": "4e8d1032b7f4128e4edd59b3b49058f35fd86ab2fe4b9a0a36e711839d24fd07",
     "currency": "VND",
-    "created_at": "2026-06-13 14:08:50"
+    "created_at": "2026-06-20 01:49:48"
   }
 ]
