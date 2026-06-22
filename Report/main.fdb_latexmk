@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1782108276.70396 "d:/KTLT/pmQuanLyChiTieu/Report/main.tex" "main.pdf" "main" 1782108286.94023 0
+["pdflatex"] 1782109685.56324 "d:/KTLT/pmQuanLyChiTieu/Report/main.tex" "main.pdf" "main" 1782109697.25025 0
   "C:/Users/Ngoc" 1763518620.66278 12676 1cfb8c651d5e3342214a49cb979af188 ""
   "C:/Users/Ngoc Khanh/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1782099774.56367 88371 b965f57369ed322039596060d18f4416 ""
   "C:/Users/Ngoc Khanh/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1782098333.00077 13369562 16a92ddd0f62ea54c480b5a20d17d45b ""
@@ -295,12 +295,12 @@
   "OUT_TC19.png" 1782106788.5524 203486 ff7b5030938e179a17480b717c3f04e8 ""
   "OUT_TC20.png" 1782106843.10228 214346 d364e22ef08ac3b4f10b5e689f6cb0e6 ""
   "OUT_TC21.png" 1782106897.86563 191197 23e87bdf54aff43fbaa8353172330685 ""
-  "d:/KTLT/pmQuanLyChiTieu/Report/main.tex" 1782108274.83917 86242 fc6f923e660faf5043ec00029d61343e ""
+  "d:/KTLT/pmQuanLyChiTieu/Report/main.tex" 1782109684.55622 86272 b7616e7a59f394157923605505e9ad3c ""
   "fami_logo.png" 1782096845.47076 76935 26b0ca8999800ef49704325eeaca8f7b ""
   "hust_logo.png" 1782096845.47464 202975 492f6111f7d2e97978e3e80dad66136e ""
-  "main.aux" 1782108286.02808 11535 e9ef0c73c165526ed8536f36466de679 "pdflatex"
-  "main.out" 1782108286.03305 8920 4731122bb5b477c298dcaa7e0420d850 "pdflatex"
-  "main.toc" 1782108286.03492 4794 8c83423ac954746ff886862c5135985a "pdflatex"
+  "main.aux" 1782109696.37125 11535 e9ef0c73c165526ed8536f36466de679 "pdflatex"
+  "main.out" 1782109696.38032 8920 4731122bb5b477c298dcaa7e0420d850 "pdflatex"
+  "main.toc" 1782109696.38184 4794 8c83423ac954746ff886862c5135985a "pdflatex"
   "mystyle.sty" 1782096845.50458 5815 578141fbbc5e211ea0696292d19dd033 ""
   (generated)
   "main.aux"
